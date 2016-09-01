@@ -1,0 +1,31 @@
+<h1>Administrador de Películas</h1>
+
+<h2>Listado de Películas</h2>
+
+<a href="#/peliculas/nueva" class="btn btn-primary">Crear nueva película</a>
+
+<div class="text-center"><img src="imgs/ajax-loader.gif" alt="Cargando..." ng-show="loading"></div>
+<div ng-show="peliculas.length == 0 && !loading">No hay resultados.</div>
+<table class="table table-bordered table-striped" ng-hide="peliculas.length == 0 || loading">
+	<tr>
+		<th>ID</th>
+		<th>Título</th>
+		<th>Género</th>
+		<th>Precio</th>
+		<th>Descripción</th>
+		<th>Acciones</th>
+	</tr>
+
+	<tr ng-repeat="peli in peliculas">
+		<td>{{ peli.cod_pelicula }}</td>
+		<td>{{ peli.nombre }}</td>
+		<td>{{ peli.genero }}</td>
+		<td>{{ peli.precio }}</td>
+		<td>{{ peli.descripcion }}</td>
+		<td>
+			<a ng-href="#/peliculas/{{ peli.cod_pelicula }}" title="Ver Película" class="glyphicon glyphicon-search"></a>
+            <a ng-href="#/peliculas/{{ peli.cod_pelicula }}/editar" title="Editar Película" class="glyphicon glyphicon-pencil"></a>
+            <a ng-href="#/peliculas/{{ peli.cod_pelicula }}/eliminar" title="Eliminar Película" class="glyphicon glyphicon-trash"></a>
+        </td>
+	</tr>
+</table>

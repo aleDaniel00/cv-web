@@ -1,0 +1,289 @@
+
+<!DOCTYPE HTML>
+<html  xmlns:ng="http://angularjs.org" ng-app="alexApp">
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Language" content="es"/>
+	<title>Curriculum Alex</title>
+ 	 <!-- Bootstrap style sheet -->
+ 	 <link rel="icon" 
+      type="image/png" 
+      href="css/img/ico-boton/icon_logo.png">
+ 	
+	<link rel="stylesheet" href="css/css/basico.css">
+</head><!--  oncontextmenu='return false' onkeydown='return false' scroll_move(); ///// v2 :"-->
+<body ng-controller="detectorScrollController" >
+	<ul id="caja" class="begin" ng-controller="btnMenuController" style="left: 1%;">
+		<li class="cajita">
+			<div class="link animacion1"></div>
+		</li>
+		<li class="cajita">
+			<div class="link animacion2 "></div>
+		</li>
+		<li class="cajita">
+			<div class="link animacion3"></div>
+		</li>
+	</ul>
+
+	<button id="logotipoTag"><img src="css/img/ico-boton/logo3.png" alt=""></button>
+
+	<header  ng-controller="menuContaineController">
+		<div id="content-menu">
+			<nav>
+				<ul class="open">
+					<li >
+						<h1 class="h1" id="logo">
+							<a href="#" title="hola mundillo"></a>
+						</h1>
+					</li>
+					<li>
+						<img src="css/img/no-clickable/ajax-loader.gif" alt="Cargando..." ng-show="loading">
+					</li>
+					<li ng-repeat="x in links"  > 
+					 	<a ng-href="#{{x.href}}" class="" ng-class="{active: x.estado==1, inactive: x.estado==0}" ng-click="consultarRuta(x)" >
+					 		{{x.title}}
+					 	</a>
+					 </li>
+					  
+
+					<li>
+						<div id="red_social">
+							<ul>
+								<li class="red_social"><a href="#" class="texto_indentado" title="Sigueme @alexp_developer">twitter</a></a></li>
+								<li class="red_social"><a href="#" class="texto_indentado" title="Ver perfil">linked</a></a></li>
+								<li class="dates">+54-11-52620205</li>
+								<li class="dates">Buenos Aires - Argentina</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
+	</header>
+
+	
+
+	<main ng-view class="ochentoso">
+			
+	</main>
+	
+
+	<aside id="aside_plus" class="menu_inactivo" >
+		<ul id="cajaCerrar">
+			<li class="cajitaCerrar">
+				<div class="linkCerrar"></div>
+			</li>
+			<li class="cajitaCerrar">
+				<div class="linkCerrar"></div>
+			</li>
+			<li class="cajitaCerrar">
+				<div class="linkCerrar"></div>
+			</li>
+		</ul>
+		<div id="requests" style="display: block;">
+			<h3>Solicitar un Proyecto</h3>
+			<h4>Seamos socios</h4>
+			<p>¿Tenes un proyecto en el que pueda ayudar? Estoy encantado en proporcionar una consulta gratuita a tu conveniencia. </p>
+			<p>Sólo hay que rellenar el siguiente formulario, y estare en contacto tan pronto como sea posible.</p>
+			<p class="required"><em class="required" title="Necesario">*</em> Requerido</p>
+			<div>
+				<div class="forms">
+					<div class="item l">
+
+						<input type="text" id="organizacion" required="true" placeholder="Organizacion"/>
+					</div>
+					<div class="item r">
+						<span class="error asterisco"><em class="required" title="Campo necesario">*</em></span>
+						<input type="text" id="rubro" required="true" placeholder="Rubro"/>
+					</div>
+					<div class="item l">
+						<span class="error asterisco"><em class="required" title="Campo necesario">*</em></span>
+						<input type="text" id="nombre" required="true" placeholder="Tu nombre"/>
+
+
+					</div><div class="item r">
+
+						<span class="error asterisco"><em class="required" title="Campo necesario">*</em></span>
+						<input type="tel" id="tel" required="true" placeholder="Numero telefonico"/>
+
+					</div>
+					<div class="item ">
+						<span class="error asterisco"><em class="required" title="Campo necesario">*</em></span>
+						<input type="email" id="mail" required="true" placeholder="Tu e-mail"/>
+					</div>
+					<div class="item ">
+						<input type="text" id="url" required="false" placeholder="URL"/>
+					</div>
+					<div class="type1 interested">Cuales servicios te interesan?<em class="required" title="servicios">*</em>
+						<span class="sub">Multiselection</span>
+					</div>
+					<ul class="checks">
+						<li>
+							<div class="box-checkbox">
+								<input type="checkbox" id="requestinterestedin1" >
+								<label for="requestinterestedin1">Website</label>
+							</div>
+						</li>
+						<li>
+							<div class="box-checkbox">
+								<input type="checkbox" id="requestinterestedin2" >
+								<label for="requestinterestedin2">Braning</label>
+							</div>
+						</li>
+						<li>
+							<div class="box-checkbox">
+								<input type="checkbox" id="requestinterestedin3" >
+								<label for="requestinterestedin13">Marketing</label>
+							</div>
+						</li>
+						<li>
+							<div class="box-checkbox">
+								<input type="checkbox" id="requestinterestedin4" >
+								<label for="requestinterestedin4">App Mobile</label>
+							</div>
+						</li>
+						<li>
+							<div class="box-checkbox">
+								<input type="checkbox" id="requestinterestedin5" >
+								<label for="requestinterestedin5">UX/UI</label>
+							</div>
+						</li>
+						<li>
+							<div class="box-checkbox">
+								<input type="checkbox" id="requestinterestedin6" >
+								<label for="requestinterestedin6">M-Commerce</label>
+							</div>
+						</li>
+						<li>
+							<div class="box-checkbox">
+								<input type="checkbox" id="requestinterestedin1" >
+								<label for="requestinterestedin1">Responsive Design</label>
+							</div>
+						</li>
+
+						<li>
+							<div class="box-checkbox">
+								<input type="checkbox" id="requestinterestedin1" >
+								<label for="requestinterestedin1">Web Mobile</label>
+							</div>
+						</li>
+						<li>
+							<div class="box-checkbox">
+								<input type="checkbox" id="requestinterestedin1" >
+								<label for="requestinterestedin1">Cortos Publicitarios</label>
+							</div>
+						</li>
+						<li>
+							<div class="box-checkbox">
+								<input type="checkbox" id="requestinterestedin1" >
+								<label for="requestinterestedin1">Promocion Web</label>
+							</div>
+						</li>
+						<li>
+							<div class="box-checkbox">
+								<input type="checkbox" id="requestinterestedin1" >
+								<label for="requestinterestedin1">Infografia</label>
+							</div>
+						</li>
+						<li>
+							<div class="box-checkbox">
+								<input type="checkbox" id="requestinterestedin1" >
+								<label for="requestinterestedin1">Actualizacion de sitios web</label>
+							</div>
+						</li>
+					</ul>
+					<div class="item ">
+						<div>
+							<textarea name="message" id="message" cols="30" rows="2" placeholder="Describe brevemente tu proyecto"></textarea>
+							<span class="error"></span>
+						</div>
+					</div>
+					<div class="item l budget">
+						<span class="type1">Presupuesto para tu proyecto?<em class="required" title="Required">*</em></span>
+						<div class="ipselect">
+							<select data-index="0">
+								<option>$1,000.00 - $5,000.00</option>
+								<option>$5,000.00- $15,000.00</option>
+								<option>$15,000.00 - $30,000.00</option>
+								<option>Mas de $50,000.00</option>
+							</select>
+						</div>
+					</div>
+					<div class="item r period">
+						<span class="type1">Tiempo estimado de duracion del proyecto?<em class="required" title="Required">*</em></span>
+						<div class="ipselect">
+							<select data-index="1">
+								<option>Lo necesito ahora!</option>
+								<option>1-2 semanas</option>
+								<option>2-4 Meses</option>
+								<option>No hay prisa</option>
+							</select>
+
+						</div>
+					</div>
+					<div class="item ">
+
+
+						<div class="iptext">
+
+								<label id="fileuploadlabel-request" data-uploaded="">
+									<input type="file" id="fileuploadinput" >Upload
+									<span>(PDF, Zip max 30MB)</span>
+								</label>
+							</div>
+					</div>
+
+					<div class="item agree">
+						<div class="ipcheck">
+							<span class="before">✓</span>
+							<input type="checkbox" id="requestprivacypolicy" value="0" data-setted="true">
+							<label for="requestprivacypolicy">Acepto los términos de la	<a href="#privacypolicy" class="btn-full-layer-privacypolicy" data-eventadded="true">política de privacidad</a>  y estoy de acuerdo<em class="required" title="Required">*</em>
+							</label>
+						</div>
+					</div>
+					<p class="lastment">Gracias por considerarme para su próximo proyecto.
+						Rellene este pequeño formulario y me pondre em contacto, dentro de dos días hábiles.</p>
+					<div class="submit">
+						<button type="button" class="button dark" data-icon="✓">Enviar formulario</button>
+					</div>
+					<!--<div class="share">
+						<p>Compartir</p>
+						<div class="shareicon">
+							<a href="#" data-provider="Facebook" style="color: rgb(98, 98, 98);">
+								<span>Compartir on Facebook</span>
+							</a>
+							<a href="#" data-provider="Twitter" style="color: rgb(98, 98, 98);">
+								<span>Compartir on Twitter</span>
+							</a>
+							<a href="#" data-provider="Pinterest" style="color: rgb(98, 98, 98);">
+								<span>Compartir on Pinterest</span>
+							</a>
+						</div>
+					</div>-->
+				</div>
+			</div>
+		</div>
+	</aside>
+
+	<div id="boxBlog" ></div>
+
+ <!-- Angular Material requires Angular.js Libraries -->
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+  
+
+ 	<script src="js/angular-route.js"></script>
+ 	<script src="js/angular-animate.js"></script>
+	<script src="js/app.js"></script>
+
+	<script src="js/services/AuthService.js"></script>
+	<script src="js/services/LinksService.js"></script>
+	<script src="js/services/HabilidadesService.js"></script>
+	<script src="js/services/HerramientasService.js"></script>
+	<script src="js/controllers/controllers.js"></script>
+	<script src="js/components/primer-component/primer-component.js"></script>
+	
+	
+</body>
+</html>
