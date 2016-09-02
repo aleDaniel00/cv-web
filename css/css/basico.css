@@ -289,23 +289,22 @@ header > #content-menu nav ul li h1 {
     /* background: url(../img/ico-boton/logo.png) no-repeat; */
     /* background-position: 3px 0px; */
     /* background-size: 101px 34px; */
-    width: 86%;
+    width: 83%;
     margin: 0 auto;
-    /* transition: all 800ms; */
+    transition: all 800ms;
 }
 
 h1#logo>a {
     width: auto;
     /* text-indent: -5000px; */
     display: inline-block;
-    height: 55px;
-    background: rgba(255, 0, 0, 0) url(../img/ico-boton/logo2.png) no-repeat;
-    background-position: -31% 0;
-    background-size: 119px 121px;
+    height: 184px;
+    background: rgba(255, 0, 0, 0) url(../img/no-clickable/yo.png) no-repeat;
+    background-position: top center;
     transition: all 400ms;
-    width: 100%;
-    padding: 16px 0px;
-    background-size: 76%;
+    width: 84%;
+    padding: 0px 0px;
+    background-size: 97%;
     /* border-radius: 50%; */
     /* box-shadow: 0 3px 3px #a6a6a6; */
     /* border-top: groove 3px rgba(255, 255, 255, 0.22); */
@@ -393,7 +392,7 @@ header > #content-menu nav > ul >li> a {
     display: block;
     background-position: 6% 50% !important;
     background-size: 2em;
-    color: #ffa726;
+    color: #a3a3a3;
     height: auto;
     margin: 0;
     padding: 17px 9px;
@@ -420,7 +419,7 @@ header > #content-menu >nav >ul > li>a:hover, header > #content-menu > nav >ul >
     border-left-color: #ffa726;
     opacity: 1;
     /* text-transform: uppercase; */
-    /* color: #00bad3; */
+    color: #FF9800;
     /* box-shadow: 0px 0px 11px rgba(58, 86, 90, 0.68); */
 }
 
@@ -447,7 +446,7 @@ div#red_social ul li {
     text-align: left;
     /* display: inline-block; */
     font-size: 0.7em;
-    color: #5b5b5b;
+    color: #FF9800;
     /* width: 100%; */
     text-align: center;
     /* vertical-align: inherit; */
@@ -466,32 +465,19 @@ div#red_social ul li {
 
 #red_social >ul> li> a {
     height: 36px;
-    /* overflow: hidden; */
-    /* color: transparent; */
     text-indent: -5000px;
-    background: rgb(130, 136, 139) url(../img/ico-boton/redes.png) no-repeat;
+    background: rgb(32, 32, 34) url(../img/ico-boton/redes.png) no-repeat;
     display: block;
     background-size: 44px;
-    /* padding: 11px; */
-    /* margin: 10px; */
     border-radius: 50%;
-    /* position: relative; */
-    /* transition: all ease-in-out 300ms; */
-    /* transition: all 200ms ease-out; */
     width: 3.2em;
-    /* display: block; */
-    /* border-radius: 47px; */
-    /* text-indent: -5000px; */
-    /* height: 60px; */
-    /* margin: 8px auto; */
-    /* text-align: center; */
-    /* position: relative; */
-    /* border: 1px solid rgba(70, 70, 70, 0.13); */
+    border: 1px solid rgba(233, 233, 233, 0.22);
 }
 
 div#red_social ul li a:hover {
     transition: all ease 300ms;
-    background-color: #017a89;
+    background-color: rgba(101, 92, 93, 0.4);
+    border-color: rgba(255, 154, 7, 0.59);
 }
 
 div#red_social ul li:nth-child(2) a {
@@ -506,7 +492,7 @@ div#red_social ul li:nth-child(1) a {
 div#red_social ul li:nth-child(3)> a #ventana_modal {
     top: 52%;
     left: 27px;
-    /* background: url(../img/no-clickable/arrow-left-ventana-modal.svg) 1px no-repeat; */
+   
 }
 
 div#red_social ul li:nth-child(3) a {
@@ -868,18 +854,18 @@ section#buenas > article#header #intro2 {
     position: relative;
     /* overflow: auto; */
     padding: 0%;
-    /* background: #fff; */
+    background: #FF9800;
     box-shadow: 3px 1px 3px #8E8E8E;
     /* width: 100.4%; */
 }
 
 section#buenas > article#header #intro2 p {
-    width: 36%;
+    width: 79%;
     text-align: center;
     letter-spacing: 0.3px;
     font-weight: 100;
     font-size: 1em;
-    color: #8f8f8f;
+    color: #9b5d00;
     margin: 0 auto;
     /* font-weight: 700; */
     font-size: 1.3em;
@@ -926,9 +912,9 @@ section#buenas > article#header #intro2 figure img {
 }
 
 section#buenas > article#header #intro3 {
-    background: url(../img/no-clickable/fondo_intro33.png) 38% 85% no-repeat fixed;
+    background: url(../img/no-clickable/estrategis.jpg) 54% 20% no-repeat fixed;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100;White+to+Transparent */
-    background-size: cover;
+    background-size: 200%;
     /* background-position: 0 0; */
     background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
     /* FF3.6-15 */
@@ -950,13 +936,13 @@ section#buenas > article#header #intro3 {
 }
 
 section#buenas > article#header #intro3 p {
-    width: 56%;
+    width: 73%;
     margin: 64px auto;
     display: inline-block;
-    color: #252525;
+    color: #e7e7e7;
     font-size: 1.3em;
     letter-spacing: 0.3px;
-    text-align: right;
+    text-align: center;
     padding: 15px 10px;
 }
 
@@ -2198,7 +2184,7 @@ p#p_modal {
     width: 33px;
     position: fixed;
     height: 31px;
-    /* background-color: rgba(133, 133, 133, 0.44); */
+    background-color: rgba(127, 76, 0, 0.29);
     top: 6px;
     left: 11.2%;
     cursor: pointer;
@@ -2559,7 +2545,7 @@ div#intro3 > div {
     /* width: 60%; */
     /* margin: 0 auto; */
     /* padding: 5% 0; */
-    text-align: right !important;
+    text-align: center;
 }
 
 section {
@@ -2891,7 +2877,7 @@ button:hover > span#flecha_blanca {
 header > #content-menu >nav> ul >li:nth-child(1) {
     opacity: 1!important;
     /* background: #2196f3; */
-    padding: 100px 0;
+    padding: 159px 0;
     margin-bottom: 18px;
 }
 
@@ -3313,7 +3299,7 @@ div#header-1 > .nst {
     font-size: 3.3em;
     width: 100%;
     font-weight: 100;
-    color: #797676;
+    color: #af6900;
     margin: 0 auto;
     line-height: 131%;
     text-align: center;
@@ -3364,9 +3350,9 @@ li.dates {
 
 #intro3 > .nst > h3 {
     border-color: rgb(248, 139, 55);
-    text-align: right;
+    text-align: center;
     margin: 0 0px 0px auto;
-    color: rgb(0, 0, 0);
+    color: rgb(248, 248, 248);
     /* padding: 45px 0px; */
     /* margin: 0 10px; */
     display: block;
@@ -3628,7 +3614,7 @@ header.ng-scope {
     text-align: center;
     margin: 0 auto;
     border-color: #727272;
-    width: 51%;
+    width: 73%;
 }
 
 h1#logo>a>img {

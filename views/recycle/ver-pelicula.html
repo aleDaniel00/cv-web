@@ -1,0 +1,32 @@
+<h1>{{ titulo }}</h1>
+
+<a href="#/peliculas">Volver al listado</a>
+
+<div class="text-center"><img src="imgs/ajax-loader.gif" alt="Cargando..." ng-show="loading"></div>
+
+<div ng-if="eliminando == true && eliminarCompletado == true" class="alert" ng-class="{'alert-danger': estadoStatus == 0, 'alert-success': estadoStatus == 1}">{{ estadoTexto }}</div>
+
+<div ng-hide="loading">
+	<h2>{{ pelicula.nombre }}</h2>
+
+	<table class="table table-bordered table-striped">
+		<tr>
+			<td>Género:</td>
+			<td>{{ pelicula.genero }}</td>
+		</tr>
+		<tr>
+			<td>Precio:</td>
+			<td>{{ pelicula.precio }}</td>
+		</tr>
+		<tr>
+			<td>Fecha:</td>
+			<td>{{ pelicula.fecha }}</td>
+		</tr>
+		<tr>
+			<td>Descripción:</td>
+			<td>{{ pelicula.descripcion }}</td>
+		</tr>
+	</table>
+
+	<button class="btn btn-danger" ng-if="eliminando == true" ng-click="eliminar(pelicula.cod_pelicula)">Eliminar Película</button>
+</div>

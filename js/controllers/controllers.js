@@ -537,7 +537,7 @@ function cerrarMenu(){
 				menu.getElementsByTagName("nav")[0].getElementsByTagName("ul")[0].style.transition = 'all cubic-bezier(0.4, 0, 1, 1) 400ms' ;
 			var logo = $('logo');
 				logo.style.top = '64px'
-				logo.style.left = '8px';
+				logo.style.left = '24px';
 			var btn_menu = $('caja');
 				btn_menu.style.left = '17.5%';
 				reds.getElementsByTagName("ul")[0].style.width = '100%' ;
