@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg onclick="alert();" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+
+<path stroke="#000000" stroke-width="70" stroke-miterlimit="10" d="M68.5,84h375H68.5z">
+		<animateTransform attributeName="transform" attributeType="XML"
+                    type="rotate" from="0" to="90" dur="5s"
+                    additive="replace" fill="freeze"/>
+		
+</path>
+<path stroke="#000000" stroke-width="70" stroke-miterlimit="10" d="M69,235h375H69z"></path>
+
+
+<path stroke="#000000" stroke-width="70" stroke-miterlimit="10" d="M69,389h375H69z"><animateTransform attributeName="transform" attributeType="XML"
+                    type="rotate" from="0" to="90" dur="5s"
+                    additive="replace"/></path>
+
+	
+<script  type="text/javascript">
+
+	
+	
+			//funciones cross browser
+	function removeEvent(elemento,evento,funcion) {
+	 if (elemento.removeEventListener) 
+		elemento.removeEventListener (evento,funcion,false);
+	 if (elemento.detachEvent)
+		elemento.detachEvent ('on'+evento,funcion); 
+	}
+	function addEvent(elemento, evento, funcion){
+		if(elemento.addEventListener){
+			elemento.addEventListener(evento, funcion);
+		} else if(elemento.attachEvent){
+			elemento.attachEvent('on'+evento, funcion);
+		}
+	}
+	function insertAfter(newNode, referenceNode) {
+		referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
+	}
+	//otras funciones
+	function c(str){return console.log(str);}
+	function  obtID(str){ return document.getElementById(str); }
+	function crear(str){ return document.createElement(str);} 
+	//_______________________________________
+	
+	var c = obtID('Capa_1');
+	addEvent(c,'click',enfocar);
+	console.log(document.getElementsByTagName('path')[0])
+	function enfocar(){ 
+		
+		c.getElementsByTagName('path')[0].setAttribute('transform','translate(0) rotate(45 50 50)');
+		c.getElementsByTagName('path')[2].setAttribute('transform','translate(-111) rotate(-45 62 276)');
+		c.getElementsByTagName('path')[1].setAttribute('stroke','rgba(128, 60, 60, 0)');
+			
+		
+		removeEvent(this,'click',enfocar);
+		addEvent(this,'click',desenfocar);
+	}
+	function desenfocar(){
+		
+		c.getElementsByTagName('path')[0].setAttribute('transform','translate(0) rotate(45 50 50)');
+		c.getElementsByTagName('path')[2].setAttribute('transform','translate(-111) rotate(-45 62 276)');
+		
+		removeEvent(this,'click',desenfocar);
+		addEvent(this,'click',enfocar);
+	}
+
+	</script>
+</svg>

@@ -55,43 +55,7 @@ angular.module('alexApp')
 	   		//onload_header();
 	   });
 	})
-    .controller('menuContaineController', [
-		'$scope',
-		'$routeParams',
-		'LinksService',
-		function($scope,$routeParams,LinksService) {
-			$scope.links = [];
-			$scope.loading = true;
-			LinksService.traerTodas().then(
-				function(rta) {
-					// Éxito
-					$scope.links = rta.data;
-					for (var i = 0; i < rta.data.length; i++) {
-						rta.data[i].estado =0;
-						if($routeParams.id){
-						 	rta.data[1].estado =1;
-						}else{
-					  	 	rta.data[0].estado =1;
-						}
-					}
-					$scope.consultarRuta = function (id){
-						for (var i = 0; i < $scope.links.length; i++) {
-							$scope.links[i].estado = 0;
-								if($scope.links[i].id_links == id.id_links){
-								id.estado = 1;
-							}
-						}
-					}
-					
-					
-					
-					$scope.loading = false;
-				}, function(rta) {
-					// Error
-					console.log(":(");
-				});
-		}
-	])   
+    
 	.controller('buttonsNavigator', [
 		'$scope',
 		function($scope) {
@@ -176,7 +140,7 @@ angular.module('alexApp')
 			$scope.herramientas = [];
 			$scope.loading = false;
 			
-		console.log($scope.$parent);
+		
             HerramientasService.traerPorId($routeParams.id).then(
 				function(rta) {
 					// Éxito
@@ -217,6 +181,7 @@ angular.module('alexApp')
 
 function animar_hover (objeto,text_modal){
 	
+	console.log(objeto);
 	var x = objeto;
 		x.className = 'begin';
 		
@@ -241,25 +206,19 @@ function animar_hover (objeto,text_modal){
 				x.className = 'end';
 				//removeEvent(x,'mouseenter',this);
 				addEvent(x,'mouseleave',transformar2);
-				removeEvent(x,'mouseleave',transformar);
+				removeEvent(x,'mouseenter',transformar);
 			var modal = $('ventana_modal');
 			var anchoModal = modal.offsetWidth;
-		
-			
-		
-					
-					anchoModal =  200;
-					modal.style.width = anchoModal+'px';
+				anchoModal =  200;
+				modal.style.width = anchoModal+'px';
 					
 			
 		function transformar2(){
-				if($('ventana_modal')){
-					x.removeChild($('ventana_modal'))
-				}
-				x.className = 'begin';
-				
-				addEvent(x,'mouseenter',transformar);
-			
+			if($('ventana_modal')){
+				x.removeChild($('ventana_modal'))
+			}
+			x.className = 'begin';
+			addEvent(x,'mouseenter',transformar);
 		}
 
 	}
@@ -464,7 +423,8 @@ function mostrarMenu(){
 		if($('content-menu')){
 			var width = 100;
 			var menu = $('content-menu');
-				menu.getElementsByTagName("nav")[0].getElementsByTagName("ul")[0].style.width = '0em' ;
+				menu.getElementsByTagName("nav")[0].getElementsByTagName("ul")[0].style.width = '4em' ;
+				menu.getElementsByTagName("nav")[0].getElementsByTagName("ul")[0].className = 'close' ;
 				menu.getElementsByTagName("nav")[0].getElementsByTagName("ul")[0].style.transition = 'all cubic-bezier(0.4, 0, 1, 1) 200ms' ;
 			var logo = $('logo');
 				logo.style.top = '0';
@@ -534,6 +494,7 @@ function cerrarMenu(){
 			var menu = $('content-menu');
 			var reds = $('red_social');
 				menu.getElementsByTagName("nav")[0].getElementsByTagName("ul")[0].style.width = '17em' ;
+				menu.getElementsByTagName("nav")[0].getElementsByTagName("ul")[0].className = 'open' ;
 				menu.getElementsByTagName("nav")[0].getElementsByTagName("ul")[0].style.transition = 'all cubic-bezier(0.4, 0, 1, 1) 400ms' ;
 			var logo = $('logo');
 				logo.style.top = '64px'
@@ -567,4 +528,3 @@ function cerrarMenu(){
 
 
 		
-

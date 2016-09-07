@@ -1,0 +1,34 @@
+<header >
+		<div id="content-menu">
+			<nav>
+				<ul class="open">
+					<li >
+						<h1 class="h1" id="logo">
+							<a href="#" title="hola mundillo"></a>
+						</h1>
+					</li>
+					<li>
+						<img src="css/img/no-clickable/ajax-loader.gif" alt="Cargando..." ng-show="loading">
+					</li>
+					
+					<li ng-repeat="x in links" > 
+					 	<a ng-href="#{{x.href}}" class="" ng-mouseenter="animar_hover(elemento,'texto-title');" ng-class="{active: x.estado==1, inactive: x.estado==0}" ng-click="consultarRuta(x)" >
+					 		{{x.title}}
+					 	</a>
+					 </li>
+
+					<li>
+						<div id="red_social">
+							<ul>
+								<li class="red_social"><a href="#" class="texto_indentado" title="Sigueme @alexp_developer">twitter</a></a></li>
+								<li class="red_social"><a href="#" class="texto_indentado" title="Ver perfil">linked</a></a></li>
+								<li class="dates">+54-11-52620205</li>
+								<li class="dates">Buenos Aires - Argentina</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
+	</header>

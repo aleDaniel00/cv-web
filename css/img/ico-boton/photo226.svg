@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="btn_photo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="563.799px" height="563.798px" viewBox="0 0 563.799 563.798" style="enable-background:new 0 0 563.799 563.798;"
+	 xml:space="preserve">
+<g>
+	<g>
+		<g>
+			<path d="M531.214,166.809h-16.195v-13.411c0-13.56-11.006-24.565-24.564-24.565h-59.546c-13.568,0-24.574,11.006-24.574,24.565
+				v13.411h-3.843L377.48,80.66c-5.348-18.454-22.511-31.34-41.729-31.34H228.068c-19.219,0-36.383,12.887-41.73,31.333
+				l-25.019,86.157h-3.843v-13.401c0-13.58-10.998-24.576-24.574-24.576H73.364c-13.578,0-24.574,10.996-24.574,24.576v13.401
+				H32.585C14.592,166.809,0,181.401,0,199.394v282.5c0,17.992,14.592,32.585,32.585,32.585h498.629
+				c17.993,0,32.585-14.591,32.585-32.585v-282.5C563.799,181.401,549.207,166.809,531.214,166.809z M222.601,91.168
+				c0.702-2.405,2.95-4.092,5.467-4.092h107.683c2.518,0,4.766,1.689,5.466,4.103l21.967,75.631H200.636L222.601,91.168z
+				 M281.907,496.595c-86.147,0-155.945-69.834-155.945-155.958c0-86.124,69.798-155.957,155.945-155.957
+				c86.142,0,155.948,69.833,155.948,155.957C437.857,426.761,368.049,496.595,281.907,496.595z"/>
+			<path d="M281.907,276.787c-35.265,0-63.852,28.586-63.852,63.853c0,35.259,28.586,63.844,63.852,63.844
+				c35.268,0,63.844-28.585,63.844-63.844C345.751,305.372,317.175,276.787,281.907,276.787z"/>
+			<path d="M281.907,218.17c-67.53,0-122.467,54.939-122.467,122.468s54.939,122.467,122.467,122.467
+				c67.521,0,122.459-54.938,122.459-122.467C404.369,273.109,349.43,218.17,281.907,218.17z M281.907,444.228
+				c-57.12,0-103.589-46.467-103.589-103.589S224.787,237.05,281.907,237.05c57.114,0,103.583,46.469,103.583,103.589
+				C385.49,397.761,339.021,444.228,281.907,444.228z"/>
+		</g>
+	</g>
+</g>
+<script  type='text/javascript'>
+			//funciones cross browser
+function removeEvent(elemento,evento,funcion) {
+ if (elemento.removeEventListener) 
+    elemento.removeEventListener (evento,funcion,false);
+ if (elemento.detachEvent)
+    elemento.detachEvent ('on'+evento,funcion); 
+}
+
+function addEvent(elemento, evento, funcion){
+	if(elemento.addEventListener){
+		elemento.addEventListener(evento, funcion);
+	} else if(elemento.attachEvent){
+		elemento.attachEvent('on'+evento, funcion);
+	}
+}
+function insertAfter(newNode, referenceNode) {
+    referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
+}
+//otras funciones
+function c(str){return console.log(str);}
+function  obtID(str){ return document.getElementById(str); }
+function crear(str){ return document.createElement(str);} 
+//_______________________________________
+			
+			var c = obtID(&apos;btn_photo&apos;);
+			var paths = document.getElementById('btn_photo').getElementsByTagName('path');
+			
+			for(var i = 0; i < paths.length ; i++){
+					paths[i].setAttribute('fill','#E57373');
+					console.info("aqui estoyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy")
+			}
+			addEvent( c,'mouseenter',enfocar);
+			
+			
+			function enfocar(){
+					console.log(paths.length);
+					for(var i = 0 ; i > paths.length ; i++){
+						paths[i].setAttribute('fill','#c92828');
+					}
+													
+					removeEvent(this,'mouseenter',enfocar);
+					addEvent(this,'mouseleave',desenfocar);
+				}
+				function desenfocar(){
+				
+					for(var i = 0; i > paths.length; i++){
+						paths[i].setAttribute('fill','#DBDBDB');
+					}
+					
+					removeEvent(this,'mouseleave',desenfocar);
+					addEvent(this,'mouseenter',enfocar);
+				}
+	</script>
+</svg>
