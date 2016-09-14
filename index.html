@@ -10,8 +10,7 @@
  	 <link rel="icon" 
       type="image/png" 
       href="css/img/ico-boton/icon_logo.png">
- 	
-	<link rel="stylesheet" href="css/css/basico.css">
+ 	 <link rel="stylesheet" href="css/css/basico.css">
 </head><!--  oncontextmenu='return false' onkeydown='return false' scroll_move(); ///// v2 :"-->
 <body ng-controller="detectorScrollController" >
 	<ul id="caja" class="begin" ng-controller="btnMenuController" style="left: 1%;">
@@ -25,18 +24,9 @@
 			<div class="link animacion3"></div>
 		</li>
 	</ul>
-
-	<button id="logotipoTag"><img src="css/img/ico-boton/logo3.png" alt=""></button>
 	<lista-links></lista-links> 
-	
-
-	
-
 	<main ng-view class="ochentoso">
-			
 	</main>
-	
-
 	<aside id="aside_plus" class="menu_inactivo" >
 		<ul id="cajaCerrar">
 			<li class="cajitaCerrar">
@@ -58,7 +48,6 @@
 			<div>
 				<div class="forms">
 					<div class="item l">
-
 						<input type="text" id="organizacion" required="true" placeholder="Organizacion"/>
 					</div>
 					<div class="item r">
@@ -191,17 +180,13 @@
 						</div>
 					</div>
 					<div class="item ">
-
-
 						<div class="iptext">
-
-								<label id="fileuploadlabel-request" data-uploaded="">
-									<input type="file" id="fileuploadinput" >Upload
-									<span>(PDF, Zip max 30MB)</span>
-								</label>
-							</div>
+						  <label id="fileuploadlabel-request" data-uploaded="">
+							<input type="file" id="fileuploadinput" >Upload
+							<span>(PDF, Zip max 30MB)</span>
+						  </label>
+						</div>
 					</div>
-
 					<div class="item agree">
 						<div class="ipcheck">
 							<span class="before">✓</span>
@@ -237,13 +222,10 @@
 	<div id="boxBlog" ></div>
 
  <!-- Angular Material requires Angular.js Libraries -->
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
-  
-
+  	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
  	<script src="js/angular-route.js"></script>
  	<script src="js/angular-animate.js"></script>
 	<script src="js/app.js"></script>
-
 	<script src="js/services/AuthService.js"></script>
 	<script src="js/services/LinksService.js"></script>
 	<script src="js/services/HabilidadesService.js"></script>
@@ -251,7 +233,6 @@
 	<script src="js/controllers/controllers.js"></script>
 	<script src="js/components/primer-component/primer-component.js"></script>
 	<script src="js/components/lista-links/lista-links.js"></script>
-	
-	
+
 </body>
 </html>

@@ -181,7 +181,7 @@ angular.module('alexApp')
 
 function animar_hover (objeto,text_modal){
 	
-	console.log(objeto);
+	//console.log(objeto);
 	var x = objeto;
 		x.className = 'begin';
 		
@@ -214,9 +214,9 @@ function animar_hover (objeto,text_modal){
 					
 			
 		function transformar2(){
-			if($('ventana_modal')){
+			/*if($('ventana_modal')){
 				x.removeChild($('ventana_modal'))
-			}
+			}*/
 			x.className = 'begin';
 			addEvent(x,'mouseenter',transformar);
 		}

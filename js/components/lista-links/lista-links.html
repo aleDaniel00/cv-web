@@ -10,13 +10,18 @@
 					<li>
 						<img src="css/img/no-clickable/ajax-loader.gif" alt="Cargando..." ng-show="loading">
 					</li>
-					
 					<li ng-repeat="x in links" > 
-					 	<a ng-href="#{{x.href}}" class="" ng-mouseenter="animar_hover(elemento,'texto-title');" ng-class="{active: x.estado==1, inactive: x.estado==0}" ng-click="consultarRuta(x)" >
+					 	<a ng-href="#{{x.href}}" class="" ng-mouseenter="animarHover()" ng-mouseleave="animarLeave()"ng-class="{active: x.estado==1, inactive: x.estado==0}" ng-click="consultarRuta(x)" >
 					 		{{x.title}}
+					 		<div class="ventana_modal" > 
+					 			<div class='caja_relative_modal'>	
+						 			<p class='p_modal' >
+							 			{{x.title}}
+							 		</p>
+								</div>
+					 		</div>
 					 	</a>
-					 </li>
-
+					</li>
 					<li>
 						<div id="red_social">
 							<ul>

@@ -62,10 +62,12 @@ body {
     font-size: 16px;
     /* ie */
     background-color: #1c2023;
-    scrollbar-face-color:#32BEF0scrollbar-track-color:blackscrollbar-arrow-color:blackscrollbar-shadow-color:#32BEF0scrollbar-dark-shadow-color:#32BEF0 overflow: auto opacity: 0 overflow: auto; overflow-x: hidden;
+    scrollbar-face-color:#32BEF0scrollbar-track-color:blackscrollbar-arrow-color:blackscrollbar-shadow-color:#32BEF0scrollbar-dark-shadow-color:#32BEF0 overflow: auto opacity: 0 overflow: auto;
+    overflow-x: hidden;
     z-index: 0;
     width: 100%;
     font-family: century gothic;
+    height: 100%;
 }
 
 html {
@@ -166,13 +168,14 @@ aside {
 
 /*    elementos html5   */
 /* barra de navegacion */
-main>header {
+header {
     /* width: 900px; */
     /* height: 600px; */
-    position: fixed;
-    /* background: red; */
-    */ z-index: 5;
-    z-index: 2;
+    /* position: fixed; */
+    background: red;
+    */
+    z-index: 5;
+    /* z-index: 2; */
 }
 
 #content-menu.desopaco {
@@ -201,16 +204,16 @@ header > #content-menu {
     height: auto;
     display: inline-block;
     vertical-align: text-bottom;
-    text-align: center;
+    /* text-align: center; */
     position: fixed;
     left: 0%;
-    top: 10%;
+    top: 0;
     /* background-color: rgba(222, 222, 222, 0.87); */
-    z-index: 1;
+    z-index: 2;
 }
 
 header > #content-menu nav {
-    /* background-color: #68777C; */
+    background-color: #202022;
     /* height: 100%; */
     /* width: auto; */
     /* position: relative; */
@@ -221,14 +224,14 @@ header > #content-menu nav {
 .ng-isolate-scope header > #content-menu > nav> ul {
     text-align: center;
     display: inline;
-    position: fixed;
+    position: relative;
     top: 0px;
     height: 100%;
     /* width: 178px; */
     background: #202022;
     border-left: 1px solid #0E0E0E;
     box-shadow: 2px 0 21px rgba(0, 0, 0, 0.17);
-    /* transition: all ease 300ms; */
+    position: fixed;
     transition: all cubic-bezier(0.4, 0, 1, 1) 300ms;
     overflow-y: auto;
     overflow-x: hidden;
@@ -238,11 +241,10 @@ header > #content-menu > nav> ul> li {
     display: inline-block;
     width: 100%;
     text-align: center;
-    vertical-align: inherit;
+    /* vertical-align: inherit; */
     margin: 0;
-    /* opacity: 0; */
     /* transition: all 2s; */
-    display: block;
+    display: grid 3;
     white-space: nowrap;
     /* this is for shity "non IE" browsers
 		   that dosn't support writing-mode */
@@ -260,9 +262,11 @@ header > #content-menu > nav> ul> li {
     /* IE8+ */
     -ms-writing-mode: tb-rl;
     /* IE7 and below */
-    * writing-mode: tb-rl;
+    *
+    writing-mode: tb-rl;
     margin: 0px 0%;
     /* border-bottom: 1px solid rgba(0, 0, 0, 0.06); */
+    /* position: relative; */
 }
 
 header > #content-menu >nav> ul >li:nth-child(1) > ul {
@@ -296,14 +300,14 @@ h1#logo>a {
     width: auto;
     /* text-indent: -5000px; */
     display: inline-block;
-    height: 184px;
     background: rgba(255, 0, 0, 0) url(../img/no-clickable/yo.png) no-repeat;
     background-position: top center;
     transition: all 400ms;
     width: 84%;
     padding: 0px 0px;
     background-size: 97%;
-    /* border-radius: 50%; */
+    min-height: 50px;
+    height: 185px;
     /* box-shadow: 0 3px 3px #a6a6a6; */
     /* border-top: groove 3px rgba(255, 255, 255, 0.22); */
 }
@@ -326,7 +330,7 @@ header > #content-menu nav > ul >li:nth-child(3) a #ventana_modal {
 header > #content-menu nav > ul >li:nth-child(4) a #ventana_modal {
     /* top: -1%; */
     /* left: 40px; */
-    /* background: url(../img/no-clickable/arrow-left-ventana-modal.svg) 1px no-repeat; */
+    background: url(../img/no-clickable/arrow-left-ventana-modal.svg) 1px no-repeat;
 }
 
 header > #content-menu nav > ul >li:nth-child(5) a #ventana_modal {
@@ -388,18 +392,18 @@ header > #content-menu nav > ul.open >li:nth-child(5) a {
 header > #content-menu nav > ul >li> a {
     transition: all 200ms ease-out;
     display: block;
-    background-position: 29% 50% !important;
+    background-position: 42% 50% !important;
     background-size: 1.6em;
     color: #a3a3a3;
     height: auto;
     margin: 0;
-    padding: 16px 9px;
+    padding: 16px 11px;
     text-align: initial;
-    position: relative;
+    /* position: relative; */
     width: 91.8%;
     vertical-align: middle;
     text-transform: capitalize;
-    border-left: 4px solid rgb(32, 32, 34);
+    border-left: 1px solid rgb(32, 32, 34);
     font: 400 0.8em roboto;
 }
 
@@ -1343,9 +1347,8 @@ article#herramientas >#ficha #descripcion p {
     display: block;
     text-align: center;
     font-family: roboto;
-    font-weight: 600;
     line-height: 160%;
-    color: #3d3d3d;
+    color: #7b7a7a;
 }
 
 article#herramientas >#ficha #descripcion figure {
@@ -2039,19 +2042,21 @@ footer div.dev p a:hover {
     transition: all 200ms ease;
 }
 
-#ventana_modal {
+ul.close > li > a > #ventana_modal {
     transform: none;
     border-radius: 2px;
     margin: 0;
     text-align: center;
-    z-index: 2;
+    z-index: 4;
     position: absolute;
     top: 6%;
     left: 85%;
     text-indent: initial;
-    top: 19%;
-    left: 31px;
+    top: 21%;
+    font: 500 1.6em roboto;
+    left: 110%;
     transition: all cubic-bezier(0.46, 0.03, 0.52, 0.96) 200ms;
+    background: url(../img/no-clickable/arrow-left-ventana-modal.svg) 81% 3% no-repeat; */
     transition: all cubic-bezier(0.4, 0, 1, 1) 300ms;
 }
 
@@ -2059,20 +2064,22 @@ footer nav div a#back #ventana_modal {
     left: 142%;
 }
 
-p#p_modal {
-    margin: 2% 28%;
+p#p_modal,p.p_modal {
+    /* margin: 2% 28%; */
     font-size: 0.7em;
     line-height: 143%;
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
     color: rgba(255, 255, 255, 0.98);
     transition: all 2s;
     text-shadow: 1px 1px 92px rgba(255, 255, 255, 0);
-    background-color: rgb(35, 35, 35);
-    /* height: 17%; */
-    padding: 2px 6px;
-    border-radius: 4px;
-    border: 1px solid #2F2F2F;
-    /* box-shadow: 1px 0px 18px #1C1C1C; */
+    background: rgb(19, 19, 19)  url(../img/no-clickable/arrow-left-ventana-modal.svg) 94px 6% no-repeat;
+    position: absolute;
+    padding: 6px 6px;
+    z-index: 1;
+    border-radius: 3px;
+    top: 13px;
+    left: 73px;
+    text-indent: 0;
 }
 
 /* //estilo modal - hover */
@@ -2755,7 +2762,8 @@ button:hover > span#flecha_blanca {
 header > #content-menu >nav> ul >li:nth-child(1) {
     opacity: 1!important;
     /* background: #2196f3; */
-    padding: 159px 0;
+    /* padding: 55% 0; */
+    height: 247px;
 }
 
 div#requests p.required, div#requests p.required > em.required {
@@ -3184,11 +3192,10 @@ div#red_social {
     height: auto;
     width: 93%;
     margin: 0;
-    margin-top: 130px;
     /* background: red; */
     z-index: inherit;
-    position: absolute;
-    bottom: 0%;
+    /* position: absolute; */
+    bottom: -16%;
     padding: 10px;
 }
 
@@ -3311,9 +3318,9 @@ button#arrow {
 }
 
 div#descripcion div div h5 {
-    font-size: 1.9em;
-    font-weight: bold;
-    color: #00a0b4;
+    font-size: 3.9em;
+    font-weight: 100;
+    color: #292929;
     /* border-bottom: 1px dotted rgb(64, 64, 64); */
     /* background: #f5f5f5; */
     padding: 18px 12px;
@@ -3337,16 +3344,16 @@ article#herramientas >#ficha #descripcion p:last-of-type {
 div#descripcion div div h4 {
     /* background: url(../img/no-clickable/wireframe.png) 12% 8% no-repeat; */
     padding: 21px 0;
-    border-bottom: 1px solid #00bbd3;
+    border-bottom: 1px solid #e4e4e4;
     background-size: contain;
     */
     font-size: 1;
-    font-weight: bold;
-    color: #00BCD4;
+    font-weight: 100;
+    color: #969696;
     text-align: center;
-    background: #016f7d;
+    /* background: #016f7d; */
     margin: 33px auto;
-    box-shadow: 0px 7px 16px -7px black;
+    box-shadow: 0px 8px 0px -7px rgba(169, 169, 169, 0.36);
 }
 
 div#descripcion {
@@ -3574,9 +3581,96 @@ ul.close > li > a {
 }
 
 .ng-isolate-scope >header > #content-menu nav > ul.open >li> a {
-    width: 79%;
+    width: 79.3%;
 }
 
 ul.close > li >  div#red_social > ul > li.dates {
+    display: none;
+}
+
+#content-menu > nav > ul.close >  li >  a > div.ventana_modal.inactive {
+    top: 0;
+    left: 0;
+    background: url(../img/no-clickable/arrow-left-ventana-modal.svg) no-repeat;
+    background-size: 20px 29px;
+    background-position: 25px 0px;
+    width: 0 !important;
+    height: 0;
+    transition: all 600ms;
+}
+ul.open >  li:nth-child(3) >  a > div.ventana_modal.inactive {
+    top: 23%;
+    left: 18px;
+    background: url(../img/no-clickable/arrow-left-ventana-modal.svg) no-repeat;
+    background-size: 20px 29px;
+    background-position: 25px 0px;
+    width: 0 !important;
+    height: 0;
+    transition: all 600ms;
+}
+#content-menu > nav > ul >  li:nth-child(4) >  a > div.ventana_modal.inactive {
+    top: 23%;
+    left: 18px;
+    background: url(../img/no-clickable/arrow-left-ventana-modal.svg) no-repeat;
+    background-size: 20px 29px;
+    background-position: 25px 0px;
+    width: 0 !important;
+    height: 0;
+    transition: all 600ms;
+}
+#content-menu > nav > ul >  li > a > div.inactive > p {
+    opacity: 0;
+}
+
+#content-menu > nav > ul >  li > a > div.active > p {
+    opacity: 1;
+}
+
+#content-menu > nav > ul >  li > a > div.active {
+    top: 0;
+    left: 0;
+    background: url(../img/no-clickable/arrow-left-ventana-modal.svg) no-repeat;
+    background-size: 20px 29px;
+    background-position: 25px 0px;
+    width: 0 !important;
+    height: 0;
+}
+
+ul.close > li > a.ng-binding.inactive {
+    width: 67% !important;
+}
+
+ul.close > li > a.ng-binding.active {
+    width: 65% !important;
+}
+
+.caja_relative_modal {
+    /* position: relative; */
+    width: 50px;
+    display: block;
+    height: 36px;
+}
+
+ul.close > li > a > #ventana_modal.inactive {
+    opacity: 0;
+}
+
+#content-menu > nav > ul >  li > a > div.inactive > .caja_relative_modal {
+    position: absolute;
+    left: -200px;
+    transition: all 600ms;
+}
+
+div.ventana_modal.inactive {}
+
+ul.open >  li:nth-child(3) {
+    /* background: red; */
+}
+
+ul.close {
+    padding-top: 50px;
+}
+
+.ventana_modal {
     display: none;
 }
