@@ -17,8 +17,17 @@ angular.module("alexApp")
 				  	 	rta.data[0].estado =1;
 					}
 				}
-					
-			
+				c($scope.links)
+				/*$scope.links[i].animarHover = function (){
+					$scope.links[i].eventoHover = true;
+					c('hola');
+					//document.querySelector(".ventana_modal").className = "ventana_modal active"
+
+				}
+				$scope.links[i].animarLeave = function (){
+					$scope.links[i].eventoHover = false;c('hola2');
+					$scope.links[i].eventoLeave = true;
+				}*/
 				$scope.consultarRuta = function (id){
 					for (var i = 0; i < $scope.links.length; i++) {
 						$scope.links[i].estado = 0;
@@ -29,23 +38,14 @@ angular.module("alexApp")
 
 					}
 				}
-				
-				
-			$scope.loading = false;
-			}, function(rta) {
+				$scope.loading = false;
+			},function(rta) {
 				// Error
 				console.log(":(");
 			}
 		);
 		
-		$scope.animarHover = function ($event){
-
-			c(document.querySelector(".ventana_modal"));
-			document.querySelector(".ventana_modal").className = "ventana_modal active"
-		}
-		$scope.animarLeave = function ($event){
-			document.querySelector(".ventana_modal").className = "ventana_modal inactive"
-		}
+		
 
     }
   });

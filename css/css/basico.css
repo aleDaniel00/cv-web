@@ -209,16 +209,11 @@ header > #content-menu {
     left: 0%;
     top: 0;
     /* background-color: rgba(222, 222, 222, 0.87); */
-    z-index: 2;
+    z-index: 1;
 }
 
 header > #content-menu nav {
-    background-color: #202022;
-    /* height: 100%; */
-    /* width: auto; */
-    /* position: relative; */
-    /* left: 0; */
-    /* top: 0; */
+    background-color: #1515ff;
 }
 
 .ng-isolate-scope header > #content-menu > nav> ul {
@@ -227,8 +222,14 @@ header > #content-menu nav {
     position: relative;
     top: 0px;
     height: 100%;
-    /* width: 178px; */
-    background: #202022;
+    background: #202022 url(../img/no-clickable/slide.jpg) no-repeat;
+    background-position: right -454px bottom -339px;
+    background-size: 668%;
+    /* background-attachment: fixed; */
+    /* -webkit-background-size: cover; */
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background: #1e202d14;
     border-left: 1px solid #0E0E0E;
     box-shadow: 2px 0 21px rgba(0, 0, 0, 0.17);
     position: fixed;
@@ -238,35 +239,11 @@ header > #content-menu nav {
 }
 
 header > #content-menu > nav> ul> li {
-    display: inline-block;
+    display: block;
     width: 100%;
     text-align: center;
-    /* vertical-align: inherit; */
     margin: 0;
-    /* transition: all 2s; */
-    display: grid 3;
-    white-space: nowrap;
-    /* this is for shity "non IE" browsers
-		   that dosn't support writing-mode */
-    /* -webkit-transform: translate(4.1em,0) rotate(90deg); */
-    -moz-transform: translate(4.1em,0) rotate(90deg);
-    -o-transform: translate(4.1em,0) rotate(90deg);
-    /* transform: translate(4.1em,0) rotate(90deg); */
-    /* -webkit-transform-origin: 0 0; */
-    -moz-transform-origin: 0 0;
-    -o-transform-origin: 0 0;
-    /* transform-origin: 0 0; */
-    /* IE9+ */
-    -ms-transform: none;
-    -ms-transform-origin: none;
-    /* IE8+ */
-    -ms-writing-mode: tb-rl;
-    /* IE7 and below */
-    *
-    writing-mode: tb-rl;
     margin: 0px 0%;
-    /* border-bottom: 1px solid rgba(0, 0, 0, 0.06); */
-    /* position: relative; */
 }
 
 header > #content-menu >nav> ul >li:nth-child(1) > ul {
@@ -286,19 +263,17 @@ header > #content-menu >nav> ul >li:nth-child(1) > ul {
 }
 
 header > #content-menu nav ul li h1 {
-    padding: 0;
-    padding: 0px 0;
+    padding: 24px;
     /* background: url(../img/ico-boton/logo.png) no-repeat; */
     /* background-position: 3px 0px; */
     /* background-size: 101px 34px; */
-    width: 83%;
+    width: 81%;
     margin: 0 auto;
     transition: all 800ms;
 }
-
-h1#logo>a {
+ul.close > li > h1#logo > a {
     width: auto;
-    /* text-indent: -5000px; */
+   
     display: inline-block;
     background: rgba(255, 0, 0, 0) url(../img/no-clickable/yo.png) no-repeat;
     background-position: top center;
@@ -306,10 +281,20 @@ h1#logo>a {
     width: 84%;
     padding: 0px 0px;
     background-size: 97%;
-    min-height: 50px;
+  
+    height: 50px;
+ 
+}
+ul.open > li > h1#logo > a {
+    width: auto;
+    display: inline-block;
+    background: rgba(99, 99, 99, 0) url(../img/ico-boton/logo3.png) no-repeat;
+    background-position: 50%;
+    transition: all 400ms;
+    width: 84%;
+    padding: 8px;
+    background-size: 97%;
     height: 185px;
-    /* box-shadow: 0 3px 3px #a6a6a6; */
-    /* border-top: groove 3px rgba(255, 255, 255, 0.22); */
 }
 
 header > #content-menu nav > ul >li:nth-child(2) a #ventana_modal {
@@ -415,10 +400,10 @@ header > #content-menu nav ul li a:before {
 
 header > #content-menu >nav >ul > li>a:hover, header > #content-menu > nav >ul > li> a.active {
     transition: all 200ms ease-out;
-    background-color: rgb(59, 59, 59) !important;
+    background-color: rgba(54, 56, 70, 0.58) !important;
     border-left-color: #ffa726;
     opacity: 1;
-    color: #FF9800;
+    /* color: #FF9800; */
 }
 
 div#red_social {
@@ -439,7 +424,7 @@ div#red_social ul {
 div#red_social ul li {
     text-align: left;
     font-size: 0.7em;
-    color: #FF9800;
+    color: #c5c5c5;
     text-align: center;
     transition: all 3s;
 }
@@ -453,7 +438,7 @@ div#red_social ul li {
 #red_social >ul> li> a {
     height: 36px;
     text-indent: -5000px;
-    background: rgb(32, 32, 34) url(../img/ico-boton/redes.png) no-repeat;
+    background: rgb(56, 56, 58) url(../img/ico-boton/redes.png) no-repeat;
     display: block;
     background-size: 44px;
     border-radius: 50%;
@@ -858,7 +843,8 @@ section#buenas > article#header #intro2 figure img {
 }
 
 section#buenas > article#header #intro3 {
-    background: url(../img/no-clickable/estrategis.jpg) 54% 20% no-repeat fixed;
+    background: url(../img/no-clickable/estrategis.jpg)  no-repeat;
+    background-position: right 5px bottom 5px;
     background-size: 200%;
     display: inline-block;
     width: 100%;
@@ -1156,8 +1142,7 @@ article#conoceme > ul li figure > figcaption a:hover {
 /* // seccion :  conoceme*/
 /*  seccion :  habilidades*/
 article#herramientas {
-    background: url(../img/no-clickable/fondo_intro3.png) 0 0 no-repeat fixed;
-    /* background: white; */
+    
 }
 
 article#herramientas #header-1 {
@@ -2072,10 +2057,10 @@ p#p_modal,p.p_modal {
     color: rgba(255, 255, 255, 0.98);
     transition: all 2s;
     text-shadow: 1px 1px 92px rgba(255, 255, 255, 0);
-    background: rgb(19, 19, 19)  url(../img/no-clickable/arrow-left-ventana-modal.svg) 94px 6% no-repeat;
+    background: rgb(197, 0, 0)  url(../img/no-clickable/arrow-left-ventana-modal.svg) 94px 6% no-repeat;
     position: absolute;
     padding: 6px 6px;
-    z-index: 1;
+    z-index: 7;
     border-radius: 3px;
     top: 13px;
     left: 73px;
@@ -2093,6 +2078,7 @@ p#p_modal,p.p_modal {
     cursor: pointer;
     border-radius: 50%;
     z-index: 3;
+    display: none;
     margin: 10px 16px;
     padding: 7px 7px;
     transition: all cubic-bezier(0.4, 0, 1, 1) 300ms;
@@ -2325,9 +2311,14 @@ article#header > div.sub_header {
     padding: 0;
     height: 100%;
     margin: 0 auto;
-    background: #00bcd4 url(../img/no-clickable/slide.jpg) right bottom no-repeat fixed;
-    background-position: 52% 33%;
-    background-size: 143%;
+    /* background: #202022 url(../img/no-clickable/slide.jpg) no-repeat; */
+    /* background: #3f4146; */
+    background-position: right 0 bottom 10px;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     position: relative;
     /* box-shadow: 3px 0px 9px rgba(23, 23, 23, 0.61); */
     /* opacity: 0.2; */
@@ -2644,10 +2635,11 @@ ul#caja:hover > li > div {
 div#superHeader > div > button#cotizar {
     padding: 10px;
     border-radius: 5px;
-    color: #c9c9c9;
+    color: #FF9800;
     letter-spacing: 2px;
     text-decoration: underline;
     width: auto;
+    box-shadow: 0px 0px 2px rgb(255, 167, 38);
     font-weight: 600;
     transition: all ease 200ms;
     text-align: left;
@@ -2655,13 +2647,15 @@ div#superHeader > div > button#cotizar {
     text-transform: uppercase;
     background: none;
     box-shadow: 0px 0px 2px transparent;
+    box-shadow: 0px 0px 2px rgb(255, 167, 38);
 }
 
 section#buenas > article#header > div button#cotizar:hover {
     text-decoration: underline;
-    color: #ff9800;
+    color: #f9f9f9;
     transition: all ease 200ms;
     box-shadow: 0px 0px 2px rgb(255, 167, 38);
+    background: #FF9800;
 }
 
 #caja > div#ventana_modal {
@@ -2759,11 +2753,18 @@ button:hover > span#flecha_blanca {
     transition: all ease 800ms;
 }
 
-header > #content-menu >nav> ul >li:nth-child(1) {
+header > #content-menu >nav> ul.open >li:nth-child(1) {
     opacity: 1!important;
     /* background: #2196f3; */
     /* padding: 55% 0; */
-    height: 247px;
+    /* height: 41%; */
+    transition: all 1s;
+}
+header > #content-menu >nav> ul.close >li:nth-child(1) {
+    opacity: 1!important;
+    background: #333335;
+    height: 52px;
+    transition: all 1s;
 }
 
 div#requests p.required, div#requests p.required > em.required {
@@ -3170,7 +3171,7 @@ div#header-1 > .nst {
 }
 
 .sub_header > div > p {
-    color: #FFA726;
+    color: #ffffff;
     text-align: left;
     font: 100 5em century gothic;
 }
@@ -3201,7 +3202,7 @@ div#red_social {
 
 h1#logo {
     top: 0;
-    position: absolute;
+    /* position: absolute; */
     z-index: 1;
     /* background: #00bad3; */
 }
@@ -3544,7 +3545,7 @@ li.dates {
 }
 
 ul.open {
-    /* width: 17em !important; */
+    width: 17em !important;
     /* transition: all 400ms cubic-bezier(0.4, 0, 1, 1) !important; */
 }
 
@@ -3604,7 +3605,7 @@ ul.open >  li:nth-child(3) >  a > div.ventana_modal.inactive {
     background: url(../img/no-clickable/arrow-left-ventana-modal.svg) no-repeat;
     background-size: 20px 29px;
     background-position: 25px 0px;
-    width: 0 !important;
+    /* width: 0 !important; */
     height: 0;
     transition: all 600ms;
 }
@@ -3626,13 +3627,13 @@ ul.open >  li:nth-child(3) >  a > div.ventana_modal.inactive {
     opacity: 1;
 }
 
-#content-menu > nav > ul >  li > a > div.active {
+#content-menu > nav > ul.open >  li > a > div.active {
     top: 0;
     left: 0;
     background: url(../img/no-clickable/arrow-left-ventana-modal.svg) no-repeat;
     background-size: 20px 29px;
     background-position: 25px 0px;
-    width: 0 !important;
+    /* width: 0 !important; */
     height: 0;
 }
 
@@ -3657,7 +3658,7 @@ ul.close > li > a > #ventana_modal.inactive {
 
 #content-menu > nav > ul >  li > a > div.inactive > .caja_relative_modal {
     position: absolute;
-    left: -200px;
+    /* left: -200px; */
     transition: all 600ms;
 }
 
@@ -3673,4 +3674,20 @@ ul.close {
 
 .ventana_modal {
     display: none;
+}
+
+ul.close > li:last-of-type {
+    position: fixed;
+    bottom: 0%;
+    left: 0;
+}
+
+#content-menu > nav > ul.close >  li > a > div.ventana_modal {
+    display: block;
+    background: red;
+    position: absolute;
+    left: 40px;
+}
+
+li.ng-scope {
 }

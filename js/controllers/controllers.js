@@ -72,7 +72,7 @@ angular.module('alexApp')
 					aside.className = 'activo';	
 				
 					//$('login_cv').style.transform = ' translate3d(-1100px, 0px, 0px)';
-					main.style.transform = ' translate3d(-1100px, 0px, 0px)';
+					main.style.transform = ' translate3d(-800px, 0px, 0px)';
 					main.style.cursor = '-webkit-grab';	
 					main.style.opacity = '0.7';
 					main.style.position = 'fixed';
@@ -232,8 +232,7 @@ function cerrarPanelCotizacion (){
 		
 		aside.style.overflowY = 'hidden';
 		aside.className = 'menu_inactivo';	
-	
-		main.style.transform = ' none';	
+		main.style.transform = 'translate3d(273px, 0px, 0px)';
 		main.style.position = '';
 		main.style.cursor = 'default';
 

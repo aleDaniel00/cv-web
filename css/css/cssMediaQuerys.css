@@ -1,0 +1,57 @@
+
+/*
+    MEDIA QUERY
+*/
+@media only screen and (max-width: 1050px) {
+   .sub_header {
+    background: red;
+   }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .sub_header {
+    background: blue;
+   }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+   .sub_header {
+    background: green;
+   }
+}
+
+/* iPads (landscape) paisaje ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+  .sub_header {
+    background: gray;
+   }
+}
+
+/* iPads (portrait) retrato----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    .sub_header {
+    background: pink;
+   }
+}
+
+@media only screen and (min-device-width : 1000px) and (max-device-width : 1300px) and (orientation : portrait) {
+    /* Styles */ body {
+        background:lightblue ;
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+  .sub_header {
+    background: black;
+   }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+   .sub_header {
+    background: lightgray;
+   }
+}
