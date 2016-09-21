@@ -196,7 +196,7 @@
 /* Desktops and laptops ----------- */
 @media only screen and (min-width : 1380px) {
     .sub_header {
-        background: #fa9633;
+        /* background: #fa9633; */
     }
     .ochentoso{
         width:80%;
@@ -222,7 +222,7 @@
 }
 @media only screen and (max-width: 1050px) {
      .sub_header {
-        /* background: #202022 url(../img/no-clickable/slide.jpg) no-repeat; */
+        background: #202022 url(../img/no-clickable/slide.jpg) no-repeat;
     }
     .ochentoso{
         width: 65%;
