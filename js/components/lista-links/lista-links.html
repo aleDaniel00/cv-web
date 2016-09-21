@@ -2,24 +2,24 @@
 		<div id="content-menu">
 			<nav>
 				<ul class="open">
-					<li >
+					<li>
 						<h1 class="h1" id="logo">
-							<a href="#" title="hola mundillo"></a>
+
 						</h1>
 					</li>
 					<li>
 						<img src="css/img/no-clickable/ajax-loader.gif" alt="Cargando..." ng-show="loading">
 					</li>
 					<li ng-repeat="x in links" > 
-					 	<a ng-href="#{{x.href}}" class="" ng-mouseenter="animarHover()" ng-mouseleave="animarLeave()"ng-class="{active: x.estado==1, inactive: x.estado==0}" ng-click="consultarRuta(x)" >
+					 	<a ng-href="#{{x.href}}" title="{{x.title | uppercase}}" ng-class="{active: x.estado==1, inactive: x.estado==0}" ng-click="consultarRuta(x)" >
 					 		{{x.title}}
-					 		<div class ="ventana_modal "ng-Class="{active: eventoHover == true,inactive: eventoLeave == true}" > 
+					 		<!--<div class ="ventana_modal "ng-class="{active: eventoHover == true,inactive: eventoLeave == true}" > 
 					 			<div class='caja_relative_modal'>	
-						 			<p class='p_modal' >
+						 			<p class='p_modal'>
 							 			{{x.title}}
 							 		</p>
 								</div>
-					 		</div>
+					 		</div>-->
 					 	</a>
 					</li>
 					<li>

@@ -270,6 +270,15 @@ header > #content-menu nav ul li h1 {
     width: 81%;
     margin: 0 auto;
     transition: all 800ms;
+    width: auto;
+    display: inline-block;
+    background: rgba(99, 99, 99, 0) url(../img/ico-boton/logo3.png) no-repeat;
+    background-position: 50%;
+    transition: all 400ms;
+    width: 84%;
+    padding: 8px;
+    background-size: 97%;
+    height: 185px;
 }
 ul.close > li > h1#logo > a {
     width: auto;
@@ -886,7 +895,7 @@ section#buenas > article#header p span strong {
 section#buenas > article#header > div button {
 }
 
-section#buenas > article#header > div >button:hover {
+btn-cotizar > div >button:hover {
     border-color: #c2c2c2;
     background-color: rgba(45, 33, 33, 0.31);
     color: #FF9800;
@@ -2054,17 +2063,18 @@ p#p_modal,p.p_modal {
     font-size: 0.7em;
     line-height: 143%;
     /* letter-spacing: 1px; */
-    color: rgba(255, 255, 255, 0.98);
+    color: rgb(95, 57, 2);
     transition: all 2s;
     text-shadow: 1px 1px 92px rgba(255, 255, 255, 0);
-    background: rgb(197, 0, 0)  url(../img/no-clickable/arrow-left-ventana-modal.svg) 94px 6% no-repeat;
+    background: #FF9800;
     position: absolute;
-    padding: 6px 6px;
+    padding: 6px 28px;
     z-index: 7;
     border-radius: 3px;
     top: 13px;
     left: 73px;
     text-indent: 0;
+    font-weight: bold;
 }
 
 /* //estilo modal - hover */
@@ -2078,7 +2088,7 @@ p#p_modal,p.p_modal {
     cursor: pointer;
     border-radius: 50%;
     z-index: 3;
-    display: none;
+    /* display: none; */
     background: #212121;
     margin: 10px 16px;
     padding: 7px 7px;
@@ -2450,7 +2460,7 @@ div#header-1 > h2 > span {
     letter-spacing: 1px;
 }
 
-#superHeader > div {
+btn-cotizar > div {
     position: relative;
     display: block;
     /* width: 100%; */
@@ -2633,7 +2643,7 @@ ul#caja:hover > li > div {
     background: #ffa726;
 }
 
-div#superHeader > div > button#cotizar {
+btn-cotizar div > button#cotizar {
     padding: 25px 20px;
     border-radius: 5px;
     color: #FF9800;
@@ -2651,7 +2661,7 @@ div#superHeader > div > button#cotizar {
     box-shadow: 0px 0px 2px rgb(255, 167, 38);
 }
 
-section#buenas > article#header > div button#cotizar:hover {
+btn-cotizar > div button#cotizar:hover {
     /* text-decoration: underline; */
     color: #ff9800;
     transition: all ease 200ms;
@@ -2660,11 +2670,11 @@ section#buenas > article#header > div button#cotizar:hover {
 }
 
 #caja > div#ventana_modal {
-    top: 23%;
-    left: 18px;
-    background: url(../img/no-clickable/arrow-left-ventana-modal.svg) no-repeat;
-    background-size: 20px 29px;
-    background-position: 25px 0px;
+    top: -0.7em;
+    left: -1em;
+    /* background: url(../img/no-clickable/arrow-left-ventana-modal.svg) no-repeat; */
+    /* background-size: 20px 29px; */
+    /* background-position: 39px 0px; */
     width: 124px !important;
 }
 
@@ -2763,9 +2773,10 @@ header > #content-menu >nav> ul.open >li:nth-child(1) {
 }
 header > #content-menu >nav> ul.close >li:nth-child(1) {
     opacity: 1!important;
-    background: #333335;
+    background: #212121;
     height: 52px;
     transition: all 1s;
+    padding: 8px 0;
 }
 
 div#requests p.required, div#requests p.required > em.required {
@@ -3692,3 +3703,18 @@ ul.close > li:last-of-type {
 
 li.ng-scope {
 }
+
+header > #content-menu nav ul.close li h1 {
+    padding: 5px;
+    width: auto;
+    display: inline-block;
+    /* background: rgba(255, 183, 183, 0) url(../img/no-clickable/yo.png) no-repeat; */
+    background-position: center;
+    transition: all 400ms;
+    width: 93%;
+    padding: 0px 0px;
+    background-size: 97%;
+    height: 50px;
+}
+
+btn-cotizar {}

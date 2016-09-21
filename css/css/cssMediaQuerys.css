@@ -156,7 +156,107 @@
     }
 }
 
-/*
+
+
+
+/* Desktops and laptops ----------- */
+/* ----------- Non-Retina Screens ----------- */
+@media screen and (-webkit-min-device-pixel-ratio: 1) and (max-device-width: 1300px) and (min-device-width: 700px) {
+    .sub_header {
+        background-color: #01ff01;
+    }
+    .ochentoso{
+        width: 80%;
+    }
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+    .sub_header {
+        background-color:green;
+    }
+}
+
+@media only screen and (min-width : 1224px) {
+    .sub_header {
+        background: blue;
+        background: #202022 url(../img/no-clickable/slide.jpg) no-repeat;
+    }
+     .ochentoso{
+        width: 80%;
+    }
+    .sub_header > div > p{
+        font-size:4em;
+    }
+    btn-cotizar > div > button#cotizar{
+        padding: 12px;
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1380px) {
+    .sub_header {
+        background: #fa9633;
+    }
+    .ochentoso{
+        width:80%;
+    }
+}
+@media only screen and (min-width : 1600px) {
+    .sub_header {
+        background: #FF9800;
+        background: #202022 url(../img/no-clickable/slide.jpg) no-repeat;
+    }
+    .ochentoso{
+        width: 83%;
+    }
+     .sub_header > div > p{
+        font-size:5em;
+    }
+    .nst > h3 {
+    font-size: 3.3em;
+    }
+    btn-cotizar > div > button#cotizar {
+    padding: 25px 20px;
+}
+}
+@media only screen and (max-width: 1050px) {
+     .sub_header {
+        background: red;
+        background: #202022 url(../img/no-clickable/slide.jpg) no-repeat;
+    }
+    .ochentoso{
+        width: 65%;
+    }
+     .sub_header > div > p{
+        font-size: 3em;
+        padding: 0 0;
+    }
+    #caja{
+        display: block;
+    }
+    .sub_header > .nst{
+        min-height:300px;
+    }
+    btn-cotizar > div > button#cotizar{
+        padding: 13px;
+    }
+    .nst{
+        padding: 50px 0;
+    }
+    btn-cotizar > div{
+        padding: 69px 0;
+    }
+    .nst > h3{
+        font-size: 3em;
+    }
+   
+}
+/*@media only screen and (min-width: 1050px) {
+     .sub_header {
+        background: blue;
+    }
+}*/
 
 /* ----------- iPad mini ----------- */
 /* Portrait and Landscape */
@@ -266,94 +366,6 @@
     sub_header {
         background:blue;
     }
-}
-
-/* Desktops and laptops ----------- */
-/* ----------- Non-Retina Screens ----------- */
-@media screen and (-webkit-min-device-pixel-ratio: 1) and (max-device-width: 1300px) and (min-device-width: 700px) {
-    .sub_header {
-        background-color: #01ff01;
-    }
-    .ochentoso{
-        width: 80%;
-    }
-}
-
-/* ----------- Retina Screens ----------- */
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
-    .sub_header {
-        background-color:green;
-    }
-}
-
-@media only screen and (min-width : 1224px) {
-    .sub_header {
-        background: blue;
-        background: #202022 url(../img/no-clickable/slide.jpg) no-repeat;
-    }
-     .ochentoso{
-        width: 80%;
-    }
-    .sub_header > div > p{
-        font-size:4em;
-    }
-}
-
-/* Desktops and laptops ----------- */
-@media only screen and (min-width : 1380px) {
-    .sub_header {
-        background: #fa9633;
-    }
-    .ochentoso{
-        width:80%;
-    }
-}
-@media only screen and (min-width : 1600px) {
-    .sub_header {
-        background: #FF9800;
-        background: #202022 url(../img/no-clickable/slide.jpg) no-repeat;
-    }
-    .ochentoso{
-        width: 83%;
-    }
-     .sub_header > div > p{
-        font-size:5em;
-    }
-    .nst > h3 {
-    font-size: 3.3em;
-}
-}
-@media only screen and (max-width: 1050px) {
-     .sub_header {
-        background: red;
-        background: #202022 url(../img/no-clickable/slide.jpg) no-repeat;
-    }
-    .ochentoso{
-        width: 61%;
-    }
-     .sub_header > div > p{
-        font-size: 3em;
-        padding: 0 0;
-    }
-    #caja{
-        display: block;
-    }
-    .sub_header > .nst{
-        min-height:300px;
-    }
-    div#superHeader > div > button#cotizar{
-        padding: 13px;
-    }
-    .nst{
-        padding: 50px 0;
-    }
-    #superHeader > div{
-        padding: 69px 0;
-    }
-    .nst > h3{
-        font-size: 3em;
-    }
-   
 }
 
 /* ----------- Apple Watch ----------- */

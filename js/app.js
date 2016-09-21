@@ -10,8 +10,7 @@ angular
 				// Cada when define una ruta en nuestra aplicación.
 				.when('/buenas', {
 					// Le indicamos el template que queremos usar.
-					'templateUrl': 'views/buenas.html',
-					'controller': 'buttonsNavigator'
+					'templateUrl': 'views/buenas.html'
 				})
 				/*.when('/buenas/herramientas', {
 					// Le indicamos el template que queremos usar.

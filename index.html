@@ -14,17 +14,7 @@
  	<link rel="stylesheet" href="css/css/cssMediaQuerys.css">
 </head><!--  oncontextmenu='return false' onkeydown='return false' scroll_move(); ///// v2 :"-->
 <body ng-controller="detectorScrollController" >
-	<ul id="caja" class="begin" ng-controller="btnMenuController" style="left: 1%;">
-		<li class="cajita">
-			<div class="link animacion1"></div>
-		</li>
-		<li class="cajita">
-			<div class="link animacion2 "></div>
-		</li>
-		<li class="cajita">
-			<div class="link animacion3"></div>
-		</li>
-	</ul>
+	<btn-menu></btn-menu>
 	<lista-links></lista-links>
 	<main ng-view class="ochentoso">
 	</main>
@@ -43,6 +33,8 @@
 	<script src="js/components/primer-component/primer-component.js"></script>
 	<script src="js/components/lista-links/lista-links.js"></script>
 	<script src="js/components/form-cotizacion/form-cotizacion.js"></script>
+	<script src="js/components/btn-menu/btn-menu.js"></script>
+	<script src="js/components/btn-cotizar/btn-cotizar.js"></script>
 	<script src="js/google/analytics/analytics.js"></script>
 
 </body>
