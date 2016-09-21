@@ -6,21 +6,21 @@
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
     .sub_menu {
-        background-color: black
+        background-color: pink;
     }
 }
 
 /* Portrait */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     .sub_menu {
-        background-color: black
+        background-color: green;
     }
 }
 
 /* Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     .sub_menu {
-        background-color: black
+        background-color: blue;
     }
 }
 
@@ -28,21 +28,21 @@
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
     .sub_menu {
-        background-color: black
+        background-color: green;
     }
 }
 
 /* Portrait */
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     .sub_menu {
-        background-color: black
+        background-color: blue;
     }
 }
 
 /* Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     .sub_menu {
-        background-color: black
+        background-color: pink;
     }
 }
 
@@ -50,21 +50,21 @@
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
     .sub_menu {
-        background-color: black
+        background-color: red;
     }
 }
 
 /* Portrait */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     .sub_menu {
-        background-color: black
+        background-color: blue;
     }
 }
 
 /* Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     .sub_menu {
-        background-color: black
+        background-color: green;
     }
 }
 
@@ -72,21 +72,21 @@
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
     .sub_menu {
-        background-color: black
+        background-color: red;
     }
 }
 
 /* Portrait */
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
     .sub_menu {
-        background-color: black
+        background-color: pink;
     }
 }
 
 /* Landscape */
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
     .sub_menu {
-        background-color: black
+        background-color: blue;
     }
 }
 
@@ -94,21 +94,21 @@
 /* Portrait and Landscape */
 @media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) {
     .sub_header {
-        background-color: red
+        background-color: red;
     }
 }
 
 /* Portrait */
 @media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
     .sub_header {
-        background-color: red
+        background-color: red;
     }
 }
 
 /* Landscape */
 @media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {
     .sub_header {
-        background-color: red
+        background-color: red;
     }
 }
 
@@ -116,21 +116,21 @@
 /* Portrait and Landscape */
 @media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
     .sub_header {
-        background-color: red
+        background-color: red;
     }
 }
 
 /* Portrait */
 @media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
     .sub_header {
-        background-color: red
+        background-color: red;
     }
 }
 
 /* Landscape */
 @media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
     .sub_header {
-        background-color: red
+        background-color: red;
     }
 }
 
@@ -138,21 +138,21 @@
 /* Portrait and Landscape */
 @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
     .sub_header {
-        background-color: red
+        background-color: red;
     }
 }
 
 /* Portrait */
 @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
     .sub_header {
-        background-color: red
+        background-color: red;
     }
 }
 
 /* Landscape */
 @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
     .sub_header {
-        background-color: red
+        background-color: red;
     }
 }
 
@@ -161,7 +161,7 @@
 
 /* Desktops and laptops ----------- */
 /* ----------- Non-Retina Screens ----------- */
-@media screen and (-webkit-min-device-pixel-ratio: 1) and (max-device-width: 1300px) and (min-device-width: 700px) {
+/*@media screen and (-webkit-min-device-pixel-ratio: 1) and (max-device-width: 1300px) and (min-device-width: 700px) {
     .sub_header {
         background-color: #01ff01;
     }
@@ -169,7 +169,7 @@
         width: 80%;
     }
 }
-
+*/
 /* ----------- Retina Screens ----------- */
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
     .sub_header {
@@ -222,8 +222,7 @@
 }
 @media only screen and (max-width: 1050px) {
      .sub_header {
-        background: red;
-        background: #202022 url(../img/no-clickable/slide.jpg) no-repeat;
+        /* background: #202022 url(../img/no-clickable/slide.jpg) no-repeat; */
     }
     .ochentoso{
         width: 65%;
@@ -262,21 +261,29 @@
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
     .sub_header {
-        background: pink;
+         background: #202022 url(../img/no-clickable/slide.jpg) no-repeat;
+         background: blue;
+    }
+    .ochentoso{
+        width: 20%;
     }
 }
 
 /* Portrait */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
     .sub_header {
-        background: pink;
+         background: #202022 url(../img/no-clickable/slide.jpg) no-repeat;
+      background: red;
+    }
+    .ochentoso{
+        width: 20%;
     }
 }
 
 /* Landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
     .sub_header {
-        background: pink;
+         background: #202022 url(../img/no-clickable/slide.jpg) no-repeat;
     }
 }
 
@@ -284,21 +291,33 @@
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
     .sub_header {
-        background: pink;
+         background: #202022 url(../img/no-clickable/slide.jpg) no-repeat;
+      background: green;
+    }
+    .ochentoso{
+        width: 20%;
     }
 }
 
 /* Portrait */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
     .sub_header {
-        background: pink;
+         background: #202022 url(../img/no-clickable/slide.jpg) no-repeat;
+       background: pink;
+    }
+    .ochentoso{
+        width: 20%;
     }
 }
 
 /* Landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
     .sub_header {
-        background: pink;
+         background: #202022 url(../img/no-clickable/slide.jpg) no-repeat;
+       background: gray;
+    }
+    .ochentoso{
+        width: 20%;
     }
 }
 
@@ -306,21 +325,29 @@
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
     .sub_header {
-        background: pink;
+         background: #202022 url(../img/no-clickable/slide.jpg) no-repeat;
+          background: yellow;
     }
 }
 
 /* Portrait */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
     .sub_header {
-        background: pink;
+         background: #202022 url(../img/no-clickable/slide.jpg) no-repeat;
+    }
+     .ochentoso{
+        width: 65%;
     }
 }
 
 /* Landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
     .sub_header {
-        background: pink;
+         background: #202022 url(../img/no-clickable/slide.jpg) no-repeat;
+          
+    }
+     .ochentoso{
+        width: 74%;
     }
 }
 
@@ -328,21 +355,24 @@
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 800px) and (max-device-width: 1280px) and (-webkit-min-device-pixel-ratio: 1.5) {
     sub_header {
-        background:blue;
+         background: #202022 url(../img/no-clickable/slide.jpg) no-repeat;
+          background: #eee;
     }
 }
 
 /* Portrait */
 @media only screen and (min-device-width: 800px) and (max-device-width: 1280px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: portrait) {
     sub_header {
-        background:blue;
+         background: #202022 url(../img/no-clickable/slide.jpg) no-repeat;
+          background: coffe;
     }
 }
 
 /* Landscape */
 @media only screen and (min-device-width: 800px) and (max-device-width: 1280px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: landscape) {
     sub_header {
-        background:blue;
+         background: #202022 url(../img/no-clickable/slide.jpg) no-repeat;
+          background: orange;
     }
 }
 
@@ -350,21 +380,24 @@
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1.5) {
     sub_header {
-        background:blue;
+         background: #202022 url(../img/no-clickable/slide.jpg) no-repeat;
+          background: aqumarine;
     }
 }
 
 /* Portrait */
 @media only screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: portrait) {
     sub_header {
-        background:blue;
+         background: #202022 url(../img/no-clickable/slide.jpg) no-repeat;
+          background: lightgray;
     }
 }
 
 /* Landscape */
 @media only screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: landscape) {
     sub_header {
-        background:blue;
+         background: #202022 url(../img/no-clickable/slide.jpg) no-repeat;
+          background: whitesmoke;
     }
 }
 
