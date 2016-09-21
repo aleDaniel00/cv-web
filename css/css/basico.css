@@ -239,7 +239,7 @@ header > #content-menu nav {
 }
 
 header > #content-menu > nav> ul> li {
-    display: block;
+    /* display: block; */
     width: 100%;
     text-align: center;
     margin: 0;
@@ -275,10 +275,11 @@ header > #content-menu nav ul li h1 {
     background: rgba(99, 99, 99, 0) url(../img/ico-boton/logo3.png) no-repeat;
     background-position: 50%;
     transition: all 400ms;
-    width: 84%;
+    width: 50%;
     padding: 8px;
     background-size: 97%;
     height: 185px;
+    cursor: pointer;
 }
 ul.close > li > h1#logo > a {
     width: auto;
@@ -2324,7 +2325,7 @@ article#header > div.sub_header {
     margin: 0 auto;
     /* background: #202022 url(../img/no-clickable/slide.jpg) no-repeat; */
     /* background: #3f4146; */
-    background-position: right 0 bottom 10px;
+    background-position: right 0 bottom 0px;
     background-size: cover;
     background-attachment: fixed;
     -webkit-background-size: cover;
@@ -3207,8 +3208,8 @@ div#red_social {
     margin: 0;
     /* background: red; */
     z-index: inherit;
-    /* position: absolute; */
-    bottom: -16%;
+    position: absolute;
+    bottom: 23px;
     padding: 10px;
 }
 
@@ -3562,7 +3563,7 @@ ul.open {
 }
 
 .nst > p {
-    padding: 56px 0px;
+    padding: 27px 0px;
     font: 400 1.2em roboto;
     word-spacing: 0px;
     margin: 0 auto;
