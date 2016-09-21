@@ -429,13 +429,14 @@ div#red_social {
 div#red_social ul {
     width: 100%;
     height: 100%;
+    text-align: left;
 }
 
 div#red_social ul li {
     text-align: left;
     font-size: 0.7em;
     color: #c5c5c5;
-    text-align: center;
+    text-align: left;
     transition: all 3s;
 }
 
@@ -2323,8 +2324,6 @@ article#header > div.sub_header {
     padding: 0;
     height: 100%;
     margin: 0 auto;
-    /* background: #202022 url(../img/no-clickable/slide.jpg) no-repeat; */
-    /* background: #3f4146; */
     background-position: right 0 bottom 0px;
     background-size: cover;
     background-attachment: fixed;
@@ -3204,7 +3203,7 @@ div#header-1 > .nst {
 
 div#red_social {
     height: auto;
-    width: 93%;
+    width: auto;
     margin: 0;
     /* background: red; */
     z-index: inherit;
