@@ -51,7 +51,7 @@ main {
     position: relative;
     transition: all 2s;
     opacity: 1;
-    background: #fbfbfb;
+    /* background: #fbfbfb; */
     /* cursor: default; */
     transition: all cubic-bezier(0.4, 0, 1, 1) 300ms;
 }
@@ -61,7 +61,7 @@ body {
     position: relative;
     font-size: 16px;
     /* ie */
-    background-color: #1c2023;
+    /* background-color: #1c2023; */
     scrollbar-face-color:#32BEF0scrollbar-track-color:blackscrollbar-arrow-color:blackscrollbar-shadow-color:#32BEF0scrollbar-dark-shadow-color:#32BEF0 overflow: auto opacity: 0 overflow: auto;
     overflow-x: hidden;
     z-index: 0;
@@ -71,7 +71,7 @@ body {
 }
 
 html {
-    background: rgba(247, 247, 247, 0.46);
+    /* background: rgba(247, 247, 247, 0.46); */
     height: 100%;
 }
 
@@ -222,14 +222,14 @@ header > #content-menu nav {
     position: relative;
     top: 0px;
     height: 100%;
-    background: #202022 url(../img/no-clickable/slide.jpg) no-repeat;
-    background-position: right -454px bottom -339px;
-    background-size: 668%;
+    /* background: #202022 url(../img/no-clickable/slide.jpg) no-repeat; */
+    /* background-position: right -454px bottom -339px; */
+    /* background-size: 668%; */
     /* background-attachment: fixed; */
     /* -webkit-background-size: cover; */
     -moz-background-size: cover;
     -o-background-size: cover;
-    background: #1e202d14;
+    background: #212121;
     border-left: 1px solid #0E0E0E;
     box-shadow: 2px 0 21px rgba(0, 0, 0, 0.17);
     position: fixed;
@@ -843,8 +843,8 @@ section#buenas > article#header #intro2 figure img {
 }
 
 section#buenas > article#header #intro3 {
-    background: url(../img/no-clickable/estrategis.jpg)  no-repeat;
-    background-position: right 5px bottom 5px;
+    /* background: url(../img/no-clickable/estrategis.jpg)  no-repeat; */
+    background-position: right 0 bottom 0px;
     background-size: 200%;
     display: inline-block;
     width: 100%;
@@ -854,7 +854,7 @@ section#buenas > article#header #intro3 {
 }
 
 section#buenas > article#header #intro3 p {
-    color: #adadad;
+    color: #ebebeb;
 }
 
 section#buenas > article#header #intro3 p strong {
@@ -2079,6 +2079,7 @@ p#p_modal,p.p_modal {
     border-radius: 50%;
     z-index: 3;
     display: none;
+    background: #212121;
     margin: 10px 16px;
     padding: 7px 7px;
     transition: all cubic-bezier(0.4, 0, 1, 1) 300ms;
@@ -2315,7 +2316,7 @@ article#header > div.sub_header {
     /* background: #3f4146; */
     background-position: right 0 bottom 10px;
     background-size: cover;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -2455,7 +2456,7 @@ div#header-1 > h2 > span {
     /* width: 100%; */
     height: 100%;
     margin: 0 0;
-    /* text-align: center; */
+    text-align: center;
 }
 
 /*.transform_p_header {
@@ -2633,11 +2634,11 @@ ul#caja:hover > li > div {
 }
 
 div#superHeader > div > button#cotizar {
-    padding: 10px;
+    padding: 25px 20px;
     border-radius: 5px;
     color: #FF9800;
     letter-spacing: 2px;
-    text-decoration: underline;
+    font-size: 1em;
     width: auto;
     box-shadow: 0px 0px 2px rgb(255, 167, 38);
     font-weight: 600;
@@ -2645,17 +2646,17 @@ div#superHeader > div > button#cotizar {
     text-align: left;
     position: relative;
     text-transform: uppercase;
-    background: none;
+    background: white;
     box-shadow: 0px 0px 2px transparent;
     box-shadow: 0px 0px 2px rgb(255, 167, 38);
 }
 
 section#buenas > article#header > div button#cotizar:hover {
-    text-decoration: underline;
-    color: #f9f9f9;
+    /* text-decoration: underline; */
+    color: #ff9800;
     transition: all ease 200ms;
     box-shadow: 0px 0px 2px rgb(255, 167, 38);
-    background: #FF9800;
+    background: rgb(234, 234, 234);
 }
 
 #caja > div#ventana_modal {
@@ -3213,7 +3214,7 @@ h1#logo {
     /* background-position: 86.2% 57.7%; */
     background-attachment: scroll;
     background-size: 47%;
-    padding-bottom: 22px;
+    /* padding-bottom: 22px; */
     z-index: 1;
     height: 100%;
 }
