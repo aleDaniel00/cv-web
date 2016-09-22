@@ -17,11 +17,12 @@ angular.module("alexApp").
 					}else {
 						main.style.transform = 'translate3d(-747px, 0px, 0px)';
 					}
-					btn_menu.style.zIndex = '0';
+				
+					btn_menu.style.zIndex = '-2';
 					main.style.cursor = '-webkit-grab';	
 					main.style.opacity = '0.7';
 					main.style.position = 'fixed';
-					requests.style.width = '74%';
+					requests.style.width = '87%';
 					requests.style.opacity = '';   
 					window.scrollTo(0, 0);
 					

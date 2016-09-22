@@ -43,7 +43,7 @@ function cerrarMenu(){
 			var menu = obtID('content-menu');
 				menu.getElementsByTagName("nav")[0].getElementsByTagName("ul")[0].style.width = '4em' ;
 				menu.getElementsByTagName("nav")[0].getElementsByTagName("ul")[0].className = 'close' ;
-				menu.getElementsByTagName("nav")[0].getElementsByTagName("ul")[0].style.transition = 'all cubic-bezier(0.4, 0, 1, 1) 200ms' ;
+				menu.getElementsByTagName("nav")[0].getElementsByTagName("ul")[0].style.transition = '5s' ;
 			var logo = obtID('logo');
 				logo.style.top = '0';
 				logo.style.left = '0';
@@ -98,7 +98,7 @@ function mostrarMenu(){
 			var reds = obtID('red_social');
 				menu.getElementsByTagName("nav")[0].getElementsByTagName("ul")[0].style.width = '17em' ;
 				menu.getElementsByTagName("nav")[0].getElementsByTagName("ul")[0].className = 'open' ;
-				menu.getElementsByTagName("nav")[0].getElementsByTagName("ul")[0].style.transition = 'all cubic-bezier(0.4, 0, 1, 1) 400ms' ;
+				menu.getElementsByTagName("nav")[0].getElementsByTagName("ul")[0].style.transition = '5s' ;
 			var logo = obtID('logo');
 				logo.style.top = '64px'
 				logo.style.left = '24px';
