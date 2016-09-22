@@ -43,7 +43,7 @@ function cerrarMenu(){
 			var menu = obtID('content-menu');
 				menu.getElementsByTagName("nav")[0].getElementsByTagName("ul")[0].style.width = '4em' ;
 				menu.getElementsByTagName("nav")[0].getElementsByTagName("ul")[0].className = 'close' ;
-				menu.getElementsByTagName("nav")[0].getElementsByTagName("ul")[0].style.transition = '5s' ;
+				menu.getElementsByTagName("nav")[0].getElementsByTagName("ul")[0].style.transition = '1s' ;
 			var logo = obtID('logo');
 				logo.style.top = '0';
 				logo.style.left = '0';
@@ -96,14 +96,14 @@ function mostrarMenu(){
 			var width = 100;
 			var menu = obtID('content-menu');
 			var reds = obtID('red_social');
-				menu.getElementsByTagName("nav")[0].getElementsByTagName("ul")[0].style.width = '17em' ;
+				menu.getElementsByTagName("nav")[0].getElementsByTagName("ul")[0].style.width = '14em' ;
 				menu.getElementsByTagName("nav")[0].getElementsByTagName("ul")[0].className = 'open' ;
-				menu.getElementsByTagName("nav")[0].getElementsByTagName("ul")[0].style.transition = '5s' ;
+				menu.getElementsByTagName("nav")[0].getElementsByTagName("ul")[0].style.transition = '1s' ;
 			var logo = obtID('logo');
 				logo.style.top = '64px'
 				logo.style.left = '24px';
 			var btn_menu = obtID('caja');
-				btn_menu.style.left = '17em';
+				btn_menu.style.left = '14em';
 				reds.getElementsByTagName("ul")[0].style.width = '100%' ;
 			var arrayDLinks = menu.getElementsByTagName('nav')[0].getElementsByTagName("li");
 			var arrayDRedes = reds.getElementsByTagName('ul')[0].getElementsByTagName("li");

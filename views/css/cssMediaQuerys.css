@@ -234,7 +234,7 @@
         background: #202022 url(../img/no-clickable/slide.jpg) no-repeat;
     }
     .ochentoso{
-        width: 100% !important;
+        width: 65%;
     }
      .sub_header > div > p{
         font-size: 3em;
@@ -244,33 +244,26 @@
         display: block;
     }
     .sub_header > .nst{
-        min-height: 445px;
-        padding: 1px 35px;
-        width: 90%;
-        font-size: 2vw;
+        min-height:300px;
     }
     btn-cotizar > div > button#cotizar{
         padding: 13px;
-        font-size: 2em;
     }
     .nst{
-        padding: 35px 27px;
+        padding: 50px 0;
     }
     btn-cotizar > div{
-    padding: 0;
+        padding: 69px 0;
     }
     .nst > h3{
         font-size: 3em;
     }
 
     #aside_plus{
-        width: 87%;
+        width: 611px;
     }
  #requests{
         margin: 0 !important;
-    }
-    body{
-        /* font-size:0.8em; */
     }
    
 }
