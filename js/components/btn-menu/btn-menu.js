@@ -18,9 +18,9 @@ function cerrarMenu(){
 	var i = 0;
 	if(document.getElementsByTagName('main')[0]){
 		var main = document.getElementsByTagName('main')[0];
-			main.style.transform = ' none';	
+			main.style.transform = ' translate3d(0px, 0px, 0px)';	
 			main.style.width = '100%';	
-			main.style.padding = '0 33px';	
+			main.style.padding = '0 26px';	
 	}
 	var fx=setInterval( function(){
 		if (i < 2){
@@ -69,7 +69,7 @@ function mostrarMenu(){
 	if(document.getElementsByTagName('main')[0]){
 		var main = document.getElementsByTagName('main')[0];
 		main.style.transform = ' translate3d(273px, 0px, 0px)';
-		main.style.maxWidth = '98%';	
+		main.style.maxWidth = '100%';	
 		main.style.width = '';	
 		main.style.padding = '0';	
 		

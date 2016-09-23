@@ -12,17 +12,27 @@ angular.module("alexApp").
 					
 					aside.style.overflowY = 'scroll';
 					aside.className = 'activo';	
+					
 					if(main.style.width === "100%"){
 						main.style.transform = 'translate3d(-1020px, 0px, 0px)';
+						main.style.padding = '0';
 					}else {
 						main.style.transform = 'translate3d(-747px, 0px, 0px)';
+						main.style.padding = '0 29px';
 					}
-				
+
+					/*if(){
+
+					}*/
+
 					btn_menu.style.zIndex = '-2';
+					obtID('content-menu').style.zIndex = '0';
+					menu.style.height = '0';
 					main.style.cursor = '-webkit-grab';	
 					main.style.opacity = '0.7';
 					main.style.position = 'fixed';
-					requests.style.width = '87%';
+					requests.style.width = '100%';
+					requests.style.padding = '0';
 					requests.style.opacity = '';   
 					window.scrollTo(0, 0);
 					
@@ -46,11 +56,23 @@ function cerrarPanelCotizacion (){
 		if(menu.style.width === "4em"){
 			c(main.style.transform);
 			main.style.transform = 'translate3d(0px, 0px, 0px)';
+				main.style.padding = '0 29px';
 
 		}else{
 			main.style.transform = 'translate3d(273px, 0px, 0px)';
+				main.style.padding = '0 0';
+		}
+		
+		
+		var mediaquery = window.matchMedia("(min-width: 1224px)");
+		if (mediaquery.matches) {
+		  	
+		  	menu.style.height = '0%';
+		} else {
+		 	menu.style.height = '4.46em';
 		}
 		btn_menu.style.zIndex = '2';
+		obtID('content-menu').style.zIndex = '1';
 		main.style.position = '';
 		main.style.cursor = 'default';
 		requests.style.opacity = '0';

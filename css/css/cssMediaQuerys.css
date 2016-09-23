@@ -177,23 +177,36 @@
     }
 }
 
-@media only screen and (min-width : 1224px) {
+@media only screen and (min-width: 1224px) {
     .sub_header {
         background: blue;
         background: #202022 url(../img/no-clickable/slide.jpg) no-repeat;
     }
      .ochentoso{
         width: 80%;
+    .nst >
+        figure > img {      width: 60%;
+        position: absolute;
+        top: 10%;
+        right: -9em;  }
+        max-width: 1;
     }
     .sub_header > div > p{
         font-size:4em;
+        width: 100%;
+        line-height: 117%;
+        padding: 256px 0 0 0;
     }
     btn-cotizar > div > button#cotizar{
         padding: 12px;
     }
     #aside_plus{
-        width: 1020px;
+        /* width: 1020px; */
     }
+    ul.close{
+        height:100%;
+    }
+    
 }
 
 /* Desktops and laptops ----------- */
@@ -230,31 +243,97 @@
     }
 }
 @media only screen and (max-width: 1050px) {
+    .ng-isolate-scope header > #content-menu > nav> ul.close{
+        width: 100%!important;
+        height: 4.46em;
+        overflow: hidden;
+        padding: 0;
+        text-align: left;
+        margin: 0px 0;
+        padding-left: 64px;
+    }
+    .ng-isolate-scope header > #content-menu > nav> ul.close li{
+        display: inline-block;
+    }
+     header > #content-menu >nav> ul.close >li:nth-child(1) {
+       display: inline-block;
+       width: 23%;
+       vertical-align: top;
+    }
+       .close > li > h1 {
+      width: 100% !important;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+      header > #content-menu >nav> ul.close >li:nth-child(1) {
+       background: #093140 !important;
+       width: 93px;
+    }
+     .close > li:nth-child(2) {
+       width: auto !important;
+    }
+    
+    
+    header > #content-menu > nav >ul > li> a{
+       display: inline-block !important;
+       background-color: #093140;
+       background-image: none;
+       text-indent: 0 !important;
+       width: 100% !important;
+       vertical-align: top;
+       padding: 28px 28px;
+    }
+    header > #content-menu >nav >ul.close > li>a:hover, header > #content-menu > nav >ul.close > li> a.active{
+      width: auto !important;
+      padding: 28px 28px;
+      background: rgb(13, 77, 101);
+    }
+    header > #content-menu >nav >ul > li>a:hover{
+     border: none;
+     width: 62%;
+     margin: 0 0px;
+     /* padding: 19px 13px; */
+    }
      .sub_header {
         background: #202022 url(../img/no-clickable/slide.jpg) no-repeat;
     }
     .ochentoso{
         width: 100% !important;
+        transform: translate3d(0px, 0px, 0px);
+        max-width: 100% !important;
+        padding: 0px 0 !important;
+        width: 100% !important;
     }
      .sub_header > div > p{
-        font-size: 3em;
+        font-size: 4em;
         padding: 0 0;
+        width: 100%;
+        padding: 36px 0;
+        line-height: 119%;
     }
     #caja{
         display: block;
     }
     .sub_header > .nst{
         min-height: 445px;
-        padding: 1px 35px;
-        width: 90%;
-        font-size: 2vw;
+        /* padding: 1px 35px; */
+        width: 93%;
+        /* font-size: 2vw; */
     }
     btn-cotizar > div > button#cotizar{
-        padding: 13px;
+        padding: 10px 4px;
         font-size: 2em;
+        width: 11em;
+        /* left: 10%; */
+        /* right: 116%; */
+        bottom: 4%;
     }
     .nst{
-        padding: 35px 27px;
+        padding: 67px 40px;
+        margin-left: 0;
+        /* padding: 1px 35px; */
+        width: 38em;
+        font-size: 0.8em;
     }
     btn-cotizar > div{
     padding: 0;
@@ -264,13 +343,15 @@
     }
 
     #aside_plus{
-        width: 87%;
+        width: 100%;
+        padding: 0;
     }
  #requests{
-        margin: 0 !important;
+        margin: 0;
     }
     body{
         /* font-size:0.8em; */
+        background: #148796;
     }
    
 }
@@ -331,14 +412,16 @@
 /* Portrait */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
     .sub_header {
-         background: #202022 url(../img/no-clickable/slide.jpg) no-repeat;
-       background: pink;
+        background: #202022 url(../img/no-clickable/slide.jpg) no-repeat;
     }
     .ochentoso{
         width: 20%;
     }
     #aside_plus{
-        width: 1020px;
+        width: 87%;
+    }
+    #requests{
+        margin: 0 !important;
     }
 
 }
@@ -375,7 +458,7 @@
         width: 65%;
     }
     #aside_plus{
-        width: 1020px;
+        width: 662px;
     }
 }
 
@@ -389,7 +472,7 @@
         width: 74%;
     }
     #aside_plus{
-        width: 1020px;
+        width: 925px;
     }
 }
 
