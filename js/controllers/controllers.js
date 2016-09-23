@@ -94,7 +94,14 @@ angular.module('alexApp')
 			$scope.herramientas = [];
 			$scope.loading = false;
 			
-		
+		//alert();
+		c(obtID('box_menu'))
+		if(obtID('box_menu').className === 'close'){
+			var main = document.getElementsByTagName('main')[0];
+				main.style.width = '100%';
+				main.style.transform = 'translate3d(00px, 0px, 0px)';
+				main.style.padding = '0px 26px';
+		}
             HerramientasService.traerPorId($routeParams.id).then(
 				function(rta) {
 					// Éxito
@@ -109,7 +116,18 @@ angular.module('alexApp')
 			);   
 		}
 	])
-	
+	.controller('buenasController', [
+		'$scope',
+		function($scope) {
+			c(obtID('box_menu'))
+			if(obtID('box_menu').className === 'close'){
+				var main = document.getElementsByTagName('main')[0];
+					main.style.width = '100%';
+					main.style.transform = 'translate3d(0px, 0px, 0px)';
+					main.style.padding = '0px 26px';
+			}
+		}	
+	])
 
 
 

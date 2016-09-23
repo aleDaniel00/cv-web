@@ -20,6 +20,7 @@ angular.module("alexApp")
 				$scope.desplazar = function(){
 					window.scrollTo(0, 0);
 				}
+				
 				$scope.consultarRuta = function (id){
 					for (var i = 0; i < $scope.links.length; i++) {
 						$scope.links[i].estado = 0;
