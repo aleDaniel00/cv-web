@@ -184,8 +184,12 @@
     }
      .ochentoso{
         width: 80%;
-    .nst >
-        figure > img {      width: 60%;
+    }
+    .nst{
+        width: 89%;
+    }
+    .nst >  figure > img {     
+         width: 60%;
         position: absolute;
         top: 10%;
         right: -9em;  }
@@ -208,7 +212,7 @@
     }
     section#buenas > article#header #intro3 > .nst {
         padding: 119px 0 46px 143px;
-        width: 80%;
+        width: 61%;
         text-align: center;
     }
     
