@@ -17,7 +17,7 @@ angular.module("alexApp").
 						main.style.transform = 'translate3d(-1020px, 0px, 0px)';
 						main.style.padding = '0';
 					}else {
-						main.style.transform = 'translate3d(-747px, 0px, 0px)';
+						main.style.transform = 'translate3d(-1200px, 0px, 0px)';
 						main.style.padding = '0 29px';
 					}
 
@@ -25,7 +25,7 @@ angular.module("alexApp").
 
 					}*/
 
-					btn_menu.style.zIndex = '-2';
+					btn_menu.style.display = 'none';
 					obtID('content-menu').style.zIndex = '0';
 					menu.style.height = '0';
 					main.style.cursor = '-webkit-grab';	
@@ -49,7 +49,9 @@ function cerrarPanelCotizacion (){
 	var requests = document.querySelector( '#requests' );
 	var menu = document.querySelector('#content-menu').querySelectorAll('nav')[0].querySelectorAll('ul')[0];
 	var btn_menu = document.querySelector('#caja');	
-
+		if($('#box_menu').hasClass('open')){
+			$('#box_menu').css("height","100%")
+		}
 		main.style.opacity = '1';
 		aside.style.overflowY = 'hidden';
 		aside.className = 'menu_inactivo';	
@@ -84,17 +86,20 @@ console.info(main.style.width);
 		  	menu.style.height = '4.46em';
 		  	menu.style.background = 'pink';
 		  	if(screen.width > 1050){
+		  		if(menu.getElementsByClassName('open')[0]){
+		  			alert('esta en open')
+		  		}
 		  		menu.style.background = 'lightblue';
 		  	}
-
-console.info(main.style.width);
 		} else {
 		 	menu.style.height = '100%';
 		 	menu.style.background = 'gray';
-
+	 		if(menu.getElementsByClassName('open')[0]){
+	  			alert('esta en open')
+	  		}
 		 	console.info(main.style.width);
 		}
-		btn_menu.style.zIndex = '2';
+		btn_menu.style.display = 'inline-block';
 		obtID('content-menu').style.zIndex = '1';
 		main.style.position = '';
 		main.style.cursor = 'default';

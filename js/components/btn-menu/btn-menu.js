@@ -50,6 +50,7 @@ function cerrarMenu(){
 				menu.getElementsByTagName("nav")[0].getElementsByTagName("ul")[0].style.width = '4em' ;
 				menu.getElementsByTagName("nav")[0].getElementsByTagName("ul")[0].className = 'close' ;
 				menu.getElementsByTagName("nav")[0].getElementsByTagName("ul")[0].style.transition = '1s' ;
+				menu.getElementsByTagName("nav")[0].getElementsByTagName("ul")[0].style.heig = '10px' ;
 			var logo = obtID('logo');
 				logo.style.top = '0';
 				logo.style.left = '0';
@@ -80,7 +81,10 @@ function mostrarMenu(){
 		main.style.padding = '0';	
 		
 	}
-
+	if($('#box_menu').hasClass('close')){
+			c($('#box_menu'))
+			$('#box_menu').css("height","100%")
+		}
 	var i = 0;
 	var fx=setInterval( function(){
 		if (i < 2){			
@@ -105,6 +109,7 @@ function mostrarMenu(){
 				menu.getElementsByTagName("nav")[0].getElementsByTagName("ul")[0].style.width = '14em' ;
 				menu.getElementsByTagName("nav")[0].getElementsByTagName("ul")[0].className = 'open' ;
 				menu.getElementsByTagName("nav")[0].getElementsByTagName("ul")[0].style.transition = '1s' ;
+				menu.getElementsByTagName("nav")[0].getElementsByTagName("ul")[0].style.heig = '100%' ;
 			var logo = obtID('logo');
 				logo.style.top = '64px'
 				logo.style.left = '24px';

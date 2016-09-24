@@ -250,7 +250,7 @@
     padding: 25px 20px;
     }
     #aside_plus{
-        width: 1020px;
+        width: 948px;
     }
 }
 @media only screen and (max-width: 1050px) {
@@ -295,7 +295,7 @@
        padding: 28px 28px;
     }
     header > #content-menu >nav >ul.close > li>a:hover, header > #content-menu > nav >ul.close > li> a.active{
-      width: auto !important;
+      /* width: auto !important; */
       padding: 28px 28px;
       background: rgb(13, 77, 101);
     }
