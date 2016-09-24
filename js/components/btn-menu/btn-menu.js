@@ -4,7 +4,7 @@ angular.module("alexApp").
 		controller: function(){
 			var btn_menu = obtID('caja');
 			addEvent(btn_menu,'click',cerrarMenu);
-			mostrarMenu();
+			cerrarMenu();
 		}
 	});
 

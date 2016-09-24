@@ -179,7 +179,7 @@
 
 @media only screen and (min-width: 1224px) {
     article#header > div.sub_header {
-        background: #202022 url(../img/no-clickable/slide.jpg) no-repeat;
+        background: #202022 url(../img/no-clickable/slide.jpg) top -300px left 0 no-repeat fixed;
     }
      .ochentoso{
         /* width: 80%; */
@@ -235,7 +235,7 @@
 @media only screen and (min-width : 1600px) {
     .sub_header {
         background: #FF9800;
-        background: #202022 url(../img/no-clickable/slide.jpg) no-repeat;
+        background: #202022 url(../img/no-clickable/slide.jpg) no-repeat fixed;
     }
     .ochentoso{
         max-width: 100%;
@@ -247,7 +247,7 @@
     font-size: 3.3em;
     }
     btn-cotizar > div > button#cotizar {
-    padding: 25px 20px;
+    padding: 15px 20px;
     }
     #aside_plus{
         width: 948px;

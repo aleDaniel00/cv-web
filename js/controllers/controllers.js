@@ -121,7 +121,7 @@ angular.module('alexApp')
 		'$scope',
 		function($scope) {
 			c(obtID('box_menu'))
-			if(obtID('box_menu').className === 'close'){
+			if($('#box_menu .close')){
 				var main = document.getElementsByTagName('main')[0];
 					main.style.width = '100%';
 					main.style.transform = 'translate3d(0px, 0px, 0px)';
