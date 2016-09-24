@@ -404,7 +404,7 @@
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
     .sub_header {
-         background: #202022 url(../img/no-clickable/slide.jpg) no-repeat;
+         background: #202022 url(../img/no-clickable/slide_ipad.jpg) no-repeat;
          background: blue;
     }
     .ochentoso{
@@ -416,7 +416,7 @@
 /* Portrait */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
     .sub_header {
-         background: #202022 url(../img/no-clickable/slide.jpg) no-repeat;
+         background: url(../img/no-clickable/slide_ipad.jpg) no-repeat;
       background: red;
     }
     .ochentoso{
@@ -428,7 +428,7 @@
 /* Landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
     .sub_header {
-         background: #202022 url(../img/no-clickable/slide.jpg) no-repeat;
+         background:url(../img/no-clickable/slide_ipad.jpg) no-repeat;
     }
     #aside_plus{
         width: 1020px;
@@ -439,8 +439,8 @@
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
     .sub_header {
-         background: #202022 url(../img/no-clickable/slide.jpg) no-repeat;
-      background: green;
+         background: url(../img/no-clickable/slide_ipad.jpg) no-repeat;
+     
     }
     .ochentoso{
         width: 20%;
@@ -451,7 +451,7 @@
 /* Portrait */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
     .sub_header {
-        background: #202022 url(../img/no-clickable/slide.jpg) no-repeat;
+        background: url(../img/no-clickable/slide_ipad.jpg) no-repeat;
     }
     .ochentoso{
         width: 20%;
@@ -468,7 +468,7 @@
 /* Landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
     .sub_header {
-         background: #202022 url(../img/no-clickable/slide.jpg) no-repeat;
+         background: url(../img/no-clickable/slide_ipad.jpg) no-repeat;
        background: gray;
     }
     .ochentoso{
@@ -483,15 +483,16 @@
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
     .sub_header {
-         background: #202022 url(../img/no-clickable/slide.jpg) no-repeat;
-          background: yellow;
+        
+         background-image:url(../img/no-clickable/slide_ipad.jpg);
+         background:blue;
     }
 }
 
 /* Portrait */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
     .sub_header {
-         background: #202022 url(../img/no-clickable/slide.jpg) no-repeat;
+         background-image: url(../img/no-clickable/slide_ipad.jpg);
     }
      .ochentoso{
         width: 65%;
@@ -504,7 +505,7 @@
 /* Landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
     .sub_header {
-         background: #202022 url(../img/no-clickable/slide.jpg) no-repeat;
+        background-image: url(../img/no-clickable/slide_ipad.jpg);
           
     }
      .ochentoso{
@@ -519,7 +520,7 @@
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 800px) and (max-device-width: 1280px) and (-webkit-min-device-pixel-ratio: 1.5) {
     sub_header {
-         background: #202022 url(../img/no-clickable/slide.jpg) no-repeat;
+         background:  url(../img/no-clickable/slide.jpg) no-repeat;
           background: #eee;
     }
 }
@@ -527,8 +528,8 @@
 /* Portrait */
 @media only screen and (min-device-width: 800px) and (max-device-width: 1280px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: portrait) {
     sub_header {
-         background: #202022 url(../img/no-clickable/slide.jpg) no-repeat;
-          background: coffe;
+         background:url(../img/no-clickable/slide.jpg) no-repeat;
+         
     }
 }
 
