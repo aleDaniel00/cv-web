@@ -100,7 +100,8 @@ angular.module('alexApp')
 			var main = document.getElementsByTagName('main')[0];
 				main.style.width = '100%';
 				main.style.transform = 'translate3d(00px, 0px, 0px)';
-				main.style.padding = '0px 26px';
+				main.style.padding = '0px 65px';
+				
 		}
             HerramientasService.traerPorId($routeParams.id).then(
 				function(rta) {

@@ -68,8 +68,31 @@ function cerrarPanelCotizacion (){
 		if (mediaquery.matches) {
 		  	
 		  	menu.style.height = '0%';
+		  	menu.style.background = 'red';
+		  	console.info(main.style.width);
 		} else {
 		 	menu.style.height = '4.46em';
+		 	menu.style.background = 'blue';
+		 	if(screen.width < 1050){
+		 		menu.style.background = 'green';
+		 	}
+console.info(main.style.width);
+		}
+		var mediaquery = window.matchMedia("(max-width: 1050px)");
+		if (mediaquery.matches) {
+		  	
+		  	menu.style.height = '4.46em';
+		  	menu.style.background = 'pink';
+		  	if(screen.width > 1050){
+		  		menu.style.background = 'lightblue';
+		  	}
+
+console.info(main.style.width);
+		} else {
+		 	menu.style.height = '100%';
+		 	menu.style.background = 'gray';
+
+		 	console.info(main.style.width);
 		}
 		btn_menu.style.zIndex = '2';
 		obtID('content-menu').style.zIndex = '1';

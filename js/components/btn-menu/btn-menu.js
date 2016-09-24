@@ -3,10 +3,7 @@ angular.module("alexApp").
 		templateUrl: "./js/components/btn-menu/btn-menu.html",
 		controller: function(){
 			var btn_menu = obtID('caja');
-			c(btn_menu);
 			addEvent(btn_menu,'click',cerrarMenu);
-			c(obtID("caja"))
-			//animar_hover(obtID("caja"),'Menu')
 			mostrarMenu();
 		}
 	});
@@ -22,6 +19,15 @@ function cerrarMenu(){
 			main.style.width = '100%';	
 			main.style.padding = '0 26px';	
 	}
+	/*alert();
+	console.info(obtID('box_menu'));
+	if(obtID('box_menu')){
+		alert();
+				var main = document.getElementsByTagName('main')[0];
+					main.style.width = '100%';
+					main.style.transform = 'translate3d(0px, 0px, 0px)';
+					main.style.padding = '0px 26px';
+	}*/
 	var fx=setInterval( function(){
 		if (i < 2){
 			for( i ; i <= 2; i++ ){

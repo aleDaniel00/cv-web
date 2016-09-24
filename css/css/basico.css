@@ -79,7 +79,7 @@ body {
     /* ie */
     background-color: #ffffff;
     scrollbar-face-color:#32BEF0scrollbar-track-color:blackscrollbar-arrow-color:blackscrollbar-shadow-color:#32BEF0scrollbar-dark-shadow-color:#32BEF0 overflow: auto opacity: 0 overflow: auto;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     z-index: 0;
     width: 100%;
     font-family:  'Poppins', sans-serif;
@@ -405,7 +405,7 @@ header > #content-menu nav >  ul.open >li:nth-child(3) a {
     background-position: 4% 50%;
     background-size: 1.6em;
     background-repeat: no-repeat;
-    padding-left: 44px;
+    padding-left: 45px;
 }
 
 header > #content-menu nav > ul.open >li:nth-child(4) a {
@@ -446,7 +446,7 @@ header > #content-menu nav > ul >li> a {
 
 header > #content-menu >nav >ul > li>a:hover, header > #content-menu > nav >ul > li> a.active {
     transition: 1s;
-    background-color: rgba(58, 58, 58, 0.58);
+    background-color: rgb(17, 82, 106);
     opacity: 1;
 }
 
@@ -483,7 +483,7 @@ div#red_social ul li {
 #red_social >ul> li> a {
     height: 36px;
     text-indent: -5000px;
-    background: rgb(37, 53, 60) url(../img/ico-boton/redes.png) no-repeat;
+    background: rgb(9, 49, 64) url(../img/ico-boton/redes.png) no-repeat;
     display: block;
     background-size: 44px;
     border-radius: 50%;
@@ -892,7 +892,7 @@ section#buenas > article#header #intro2 {
 }
 
 section#buenas > article#header #intro2 p {
-    color: #5c3701;
+    color: #000000;
     width: 92%;
 }
 
@@ -912,8 +912,8 @@ section#buenas > article#header #intro3 {
 
 section#buenas > article#header #intro3 p {
     color: #d8d8d8;
-    width: 80%;
-    text-align: center;
+    width: 41%;
+    text-align: left;
     padding: 0;
     margin: 0 auto;
 }
@@ -1020,6 +1020,7 @@ btn-cotizar > div {
     position: absolute;
     bottom: 0;
     padding: 14px;
+    left: 0;
 }
 
 
@@ -2343,7 +2344,7 @@ li.dates {
 
 #intro3 > .nst > h3 {
     border-color: rgb(248, 139, 55);
-    text-align: center;
+    /* text-align: center; */
     /* margin: 0 0px 0px auto; */
     color: rgb(199, 199, 199);
     /* padding: 45px 0px; */
@@ -2653,7 +2654,7 @@ li.dates {
 
 .ochentoso {
     transform: translate3d(273px, 0px, 0px);
-    width: 83%;
+    /* width: 83%; */
     /* padding-left: 39px !important; */
 }
 
@@ -2817,6 +2818,7 @@ header > #content-menu nav ul.close li h1 {
     padding: 0px 0px;
     background-size: 97%;
     height: 50px;
+    display: none;
 }
 
 
@@ -2826,7 +2828,7 @@ header > #content-menu nav ul.close li h1 {
     margin: 0 auto;
     display: inline-block;
     text-align: center;
-    /* min-height: 0; */
+    /* display: none; */
 }
 
 .nst > figure > img {
@@ -2863,6 +2865,7 @@ section#buenas > article#header #intro3 > .nst > figure {padding: 0 0 47px 0;}
 section#buenas > article#header #intro3 > .nst > figure > img {
     width: 41%;
     right: 8%;
-    top: 45%;
-    position: static;
+    top: 31%;
+    position: absolute;
+    z-index: 0;
 }
