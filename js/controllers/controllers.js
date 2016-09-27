@@ -2,6 +2,17 @@
 function obtID(id) {
 	return document.getElementById(id);
 }
+/*$(document).ready(function() {
+     checkSize();
+    // run test on resize of the window
+    $(window).resize(checkSize);
+});
+function checkSize () { 
+	var res = $('#box_menu').width(500);
+    if ($('#box_menu').width(500)) { 
+        c($('#box_menu').css('width'))
+    } 
+}*/
 function removeEvent(elemento,evento,funcion) {
  if (elemento.removeEventListener) 
     elemento.removeEventListener (evento,funcion,false);
@@ -194,4 +205,3 @@ function onload_header(){
 		//mostrarMenu();
 }*/
 
-		

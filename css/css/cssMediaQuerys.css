@@ -202,7 +202,7 @@
         font-size:4em;
         width: 80%;
         line-height: 117%;
-        padding: 256px 0 0 0;
+        padding: 61px 0 0 0;
     }
     btn-cotizar > div > button#cotizar{
         padding: 12px;
@@ -210,9 +210,7 @@
     #aside_plus{
         /* width: 1020px; */
     }
-    ul.close{
-        height:100%;
-    }
+   
     section#buenas > article#header #intro3 > .nst {
         /* padding: 119px 0 46px 143px; */
         text-align: left;
@@ -254,7 +252,7 @@
     }
 }
 @media only screen and (max-width: 1050px) {
-    .ng-isolate-scope header > #content-menu > nav> ul.close{
+   /* .ng-isolate-scope header > #content-menu > nav> ul.close{
         width: 100%!important;
         height: 4.46em;
         overflow: hidden;
@@ -277,7 +275,6 @@
       margin: 0 !important;
     }
       header > #content-menu >nav> ul.close >li:nth-child(1) {
-       background: #093140 !important;
        width: 93px;
     }
      .close > li:nth-child(2) {
@@ -287,7 +284,7 @@
     
     header > #content-menu > nav >ul > li> a{
        display: inline-block !important;
-       background-color: #093140;
+       background-color: #131313;
        background-image: none;
        text-indent: 0 !important;
        width: 100% !important;
@@ -295,25 +292,24 @@
        padding: 28px 28px;
     }
     header > #content-menu >nav >ul.close > li>a:hover, header > #content-menu > nav >ul.close > li> a.active{
-      /* width: auto !important; */
+      
       padding: 28px 28px;
-      background: rgb(13, 77, 101);
     }
     header > #content-menu >nav >ul > li>a:hover{
      border: none;
      width: 62%;
      margin: 0 0px;
-     /* padding: 19px 13px; */
-    }
+    
+    }*/
      .sub_header {
         background: #202022 url(../img/no-clickable/slide.jpg) no-repeat;
     }
     .ochentoso{
-        width: 100% !important;
+        /* width: 100% !important; */
         transform: translate3d(0px, 0px, 0px);
-        max-width: 100% !important;
-        padding: 0px 0 !important;
-        width: 100% !important;
+        /* max-width: 100% !important; */
+        /* padding: 0px 0 !important; */
+        /* width: 100% !important; */
     }
      .sub_header > div > p{
         font-size: 4em;
