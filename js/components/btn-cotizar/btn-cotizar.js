@@ -14,17 +14,17 @@ angular.module("alexApp").
 					
 					if(main.style.width === "100%"){
 						main.style.transform = 'translate3d(-1020px, 0px, 0px)';
-						main.style.padding = '0';
+						//main.style.padding = '0';
 					}else {
 						main.style.transform = 'translate3d(-1200px, 0px, 0px)';
-						main.style.padding = '0 29px';
+						//main.style.padding = '0 29px';
 					}
 
 					
 					obtID('content-menu').style.zIndex = '0';
 					menu.style.height = '0';
 					main.style.cursor = '-webkit-grab';	
-					main.style.opacity = '0.7';
+					main.style.opacity = '0';
 					main.style.position = 'fixed';
 					requests.style.width = '100%';
 					requests.style.padding = '0';
@@ -51,7 +51,7 @@ function cerrarPanelCotizacion (){
 		aside.style.overflowY = 'hidden';
 		aside.className = 'menu_inactivo';	
 		main.style.transform = 'translate3d(0px, 0px, 0px)';
-		main.style.padding = '0 29px';
+		//main.style.padding = '0 29px';
 
 		
 		
