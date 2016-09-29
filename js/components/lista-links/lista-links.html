@@ -12,19 +12,12 @@
 					</li>
 					<li ng-repeat="x in links" > 
 					 	<a ng-href="#{{x.href}}" title="{{x.title | uppercase}}" ng-class="{active: x.estado==1, inactive: x.estado==0}" ng-click="consultarRuta(x)" >
-					 		{{x.title}}
-					 		<!--<div class ="ventana_modal "ng-class="{active: eventoHover == true,inactive: eventoLeave == true}" > 
-					 			<div class='caja_relative_modal'>	
-						 			<p class='p_modal'>
-							 			{{x.title}}
-							 		</p>
-								</div>
-					 		</div>-->
+					 		<em>{{x.title}}</em>
 					 	</a>
 					</li>
 					<li > 
 					 	<a ng-href="https://github.com/aleDaniel00/cv-web" title="Repo en GitHub" ng-class="{active: x.estado==1, inactive: x.estado==0}" >
-					 		github
+					 		<em>GitHub</em>
 					 	</a>
 					</li>
 					<!--<li>
