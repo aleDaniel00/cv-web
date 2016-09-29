@@ -69,7 +69,7 @@ main {
     transition: all 2s;
     opacity: 1;
     transition: 300ms;
-    height: #ffffff;
+    height: 100%;
 }
 
 body {
@@ -77,7 +77,7 @@ body {
     position: relative;
     font-size: 16px;
     /* ie */
-    /* background-color: #0046ff; */
+    background-color: #f6f6f6;
     scrollbar-face-color:#32BEF0scrollbar-track-color:blackscrollbar-arrow-color:blackscrollbar-shadow-color:#32BEF0scrollbar-dark-shadow-color:#32BEF0 overflow: auto opacity: 0 overflow: auto;
     /* overflow-x: hidden; */
     z-index: 0;
@@ -153,7 +153,7 @@ article {
     margin: 0 auto;
     width: 100%;
     height: 100%;
-    /* background: red; */
+    background: #ececec;
     /* opacity: 1 !important; */
 }
 
@@ -444,7 +444,7 @@ header > #content-menu >nav >ul > li>a:hover, header > #content-menu > nav >ul >
     transition: 300ms;
     background-color: rgb(43, 42, 42);
     opacity: 1;
-    border-left: 2px solid #03a9f4;
+    border-left: 2px solid #ff9800;
 }
 
 div#red_social {
@@ -834,8 +834,7 @@ section#buenas, section#biography {
     position: relative;
     transition:1s;
     vertical-align: top;
-    overflow: hidden;
-   
+    /* overflow: hidden; */
     z-index: 0;
     height: 100%;
     background: #FF9800;
@@ -848,7 +847,7 @@ section#buenas > article#header {
     
 }
 
-section#buenas > article#header .sub_header p span {
+section#buenas > article#header > .sub_header >p >span {
     display: none;
     font-size: 1.2em;
     line-height: 115%;
@@ -877,27 +876,28 @@ section#buenas > article#header #intro {
 
 
 section#buenas > article#header #intro p {
-    color: #848484;
+    color: #ffffff;
 }
 
 
 section#buenas > article#header #intro2 {
     transition: 1s;
     position: relative;
-    background: #ff9906 url(../img/no-clickable/br_2.png) no-repeat;
-    background-position: right -177px top 0px;
+    background: #f69404 url(../img/no-clickable/br_2.png) no-repeat;
+    background-position: left 408% bottom -100px;
 }
 
 section#buenas > article#header #intro2 p {
-    color: #000000;
+    color: #7e7e7e;
     width: 92%;
+    text-align: center;
 }
 
 section#buenas > article#header #intro2 p strong {
 }
 
 section#buenas > article#header #intro3 {
-    background: #1b6581;
+    background: #f0f0f0;
     background-position: right 0 bottom 0px;
     background-size: 200%;
     display: inline-block;
@@ -908,9 +908,9 @@ section#buenas > article#header #intro3 {
 }
 
 section#buenas > article#header #intro3 p {
-    color: #d8d8d8;
-    width: 41%;
-    text-align: left;
+    color: #787878;
+    width: 100%;
+    text-align: center;
     padding: 0;
     margin: 0 auto;
 }
@@ -993,7 +993,7 @@ article#header > div.sub_header {
 div#intro3 > div {
    /* text-align: center; */
    margin: 0;
-   width: 86%;
+   width: 100%;
 }
 
 
@@ -1008,8 +1008,8 @@ div#header-1 > h2 > span {
 
 btn-cotizar > div {
     display: block;
-    width: 100%;
-    height: 100%;
+    width: 98%;
+    /* height: 100%; */
     margin: 4em auto;
     text-align: center;
     padding: 14px;
@@ -1033,7 +1033,7 @@ div#intro2 > div.nst > h2 {
 btn-cotizar div > button#cotizar {
     /* padding: 25px 20px; */
     border-radius: 5px;
-    color: #03a9f4;
+    color: #ff9800;
     letter-spacing: 1px;
     font-size: 1em;
     width: 13em;
@@ -1043,7 +1043,7 @@ btn-cotizar div > button#cotizar {
     text-transform: uppercase;
     left: 0;
     bottom: 9%;
-    background: #ffffff;
+    background: rgba(255, 255, 255, 0.1);
     box-shadow: 0px 0px 2px transparent;
     border: 2px solid rgba(107, 106, 104, 0);
 }
@@ -1300,7 +1300,7 @@ article#herramientas >#ficha {
     width: 100%;
     margin: 0 auto;
     display: block;
-    height: 100%;
+    min-height: 65%;
     z-index: -1;
 }
 
@@ -1313,7 +1313,7 @@ article#herramientas >#ficha #descripcion {
     /* margin-left: 0px; */
     /* border-left: 3px solid #EEEFEF; */
     /* position: relative; */
-    height: 100%;
+    height: 70%;
 }
 
 article#herramientas >#ficha #descripcion h3 {
@@ -1445,7 +1445,7 @@ div.one {
     /* padding: 0px 0px !important; */
     border-radius: 5px;
     border: 1px solid rgba(176, 176, 176, 0.61);
-    box-shadow: 0 0 3px #cbcbcb;
+    box-shadow: 0 0 8px #dbdbdb;
 }
 
 div#hab_ux_heuris {
@@ -1903,11 +1903,12 @@ aside.activo > #requests {
 #intro > div {
     /* width: 80%; */
     /* margin: 6% auto; */
-    /* padding: 0; */
-    /* background: rgb(255, 255, 255); */
+    /* padding: 0 0; */
+    /* background: rgb(198, 184, 184); */
     /* background: #00bcd4 url(../img/no-clickable/dv_r.jpg) right bottom no-repeat; */
     background-position: top center;
     background-size: contain;
+    position: relative;
 }
 
 .required {
@@ -2197,8 +2198,8 @@ a.btn-full-layer-privacypolicy:hover {
     margin: 0 auto;
     /* box-shadow: 0px 1px 9px #0000001f; */
     text-align: left;
-    /* padding: 200px 0; */
-    padding: 200px 60px;
+    padding: 200px 0;
+    /* padding: 0; */
 }
 
 #intro3 div h2 {
@@ -2275,24 +2276,22 @@ div#header-1 > .nst {
 }
 
 .sub_header > div > p {
-    color: rgb(255, 255, 255);
+    color: #FF9800;
     text-align: left;
     font: 100 2em  'Poppins', sans-serif;
     padding: 37px 0px;
     /* text-transform: uppercase; */
 }
 
-.nst > h3 {
-    padding: 5px 0;
+.nst > div >h3 {
+    padding: 0 0;
     font-size: 3.3em;
     font-weight: 100;
-    color: #503000;
-    margin: 23px 0;
+    color: #ffffff;
+    margin: 17px 0px 12px;
     line-height: 131%;
-    text-align: left;
-    /* border-bottom: 1px solid #e4e4e4; */
-    /* border-top: 4px solid #e4e4e4; */
-    width: 51%;
+    text-align: center;
+    width: 100%;
 }
 
 div#red_social {
@@ -2311,7 +2310,7 @@ h1#logo {
     color: #ffffff;
     font-size: 31px;
     display: block;
-    width: 100%;
+    width: auto;
     /* background: rgba(33, 150, 243, 0.43); */
     padding: 40.6px 0;
     padding-left: 60px;
@@ -2327,6 +2326,7 @@ h1#logo {
     z-index: 1;
     height: 100%;
     position: relative;
+    /* background: rgba(233, 119, 46, 0) url(../img/no-clickable/lit.png) top 0 right 0 no-repeat fixed; */
 }
 
 li.red_social {
@@ -2338,11 +2338,11 @@ li.dates {
     display: block;
 }
 
-#intro3 > .nst > h3 {
+#intro3 > .nst > div >h3 {
     border-color: rgb(248, 139, 55);
     /* text-align: center; */
     /* margin: 0 0px 0px auto; */
-    color: rgb(244, 244, 244);
+    color: rgb(106, 106, 106);
     /* padding: 45px 0px; */
     /* margin: 0 10px; */
     display: block;
@@ -2598,13 +2598,13 @@ header.ng-scope {
     z-index: 1;
 }
 
-#intro > .nst > h3 {
-    color: #514e4e;
+#intro > .nst > div> h3 {
+    color: #ffffff;
 }
 
-#intro2 > .nst > h3 {
-    color: #6d4203;
-    width: 64%;
+#intro2 > .nst > div > h3 {
+    color: #666666;
+    width: 100%;
 }
 
 h1#logo>a>img {
@@ -2824,7 +2824,8 @@ header > #content-menu nav ul.close li h1 {
     margin: 0 auto;
     display: inline-block;
     text-align: center;
-    /* display: none; */
+    position: absolute;
+    top: 0;
 }
 
 .nst > figure > img {
@@ -3043,3 +3044,116 @@ article#herramientas #header-1,article#herramientas #menu-habilidades {
 }
 
 ul#box_menu > li:nth-child(3) > a > em {padding-left: 6px;}
+
+#intro > div >div {
+    width: 40%;
+    padding: 50px;
+    background: #ff9800;
+    display: block;
+    margin: 0 auto;
+    border-radius: 3px;
+    border: 1px solid #dd8400;
+    box-shadow: 0 0 4px rgba(170, 170, 170, 0.98);
+    text-align: center;
+}
+
+div#intro2 > div > div {
+    background: rgba(255, 255, 255, 0.92);
+    width: 40%;
+    padding: 50px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 3px;
+    border: 1px solid #e7e7e7;
+    box-shadow: 0 0 4px rgba(170, 170, 170, 0.98);
+}
+
+div#intro3 > div > div {
+    background: rgb(255, 255, 255);
+    width: 40%;
+    padding: 50px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 3px;
+    border: 1px solid #c8c8c8;
+    box-shadow: 0 0 4px rgba(170, 170, 170, 0.35);
+}
+
+footer {
+    display: block;
+    background: #262626;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 0;
+}
+
+caminos-contacto.ng-scope.ng-isolate-scope {
+    display: block;
+    width: 50px;
+    height: 52px;
+    background: red;
+}
+
+caminos-contacto.ng-isolate-scope > footer, caminos-contacto.ng-isolate-scope > footer > header,caminos-contacto.ng-isolate-scope > footer > header > ul, caminos-contacto.ng-isolate-scope > footer > header > ul > li ,caminos-contacto.ng-isolate-scope > footer > header > ul > li > p {
+    font-size: 0.95em;
+    /* text-align: center; */
+    color: #939393;
+}
+
+caminos-contacto.ng-isolate-scope > footer > header > ul {
+    display: inline-block;
+    width: 44%;
+    vertical-align: top;
+}
+
+caminos-contacto.ng-isolate-scope > footer > header {
+    width: 74%;
+    margin: 0 auto;
+}
+
+caminos-contacto.ng-isolate-scope > footer > header > ul > li {
+    padding: 0px 4px;
+    position: relative;
+}
+
+span#contactTel {
+}
+
+span#contactTel {
+    background: url(../img/ico-boton/phone-book.svg) bottom 0 left 0 no-repeat;
+    background-size: contain;
+}
+
+span#contactEmail {
+    background: url(../img/ico-boton/email.svg) bottom 0 left 0 no-repeat;
+    background-size: contain;
+}
+
+span#contactMap {
+    background: url(../img/ico-boton/placeholder.svg) top center no-repeat;
+    background-size: contain;
+}
+
+caminos-contacto.ng-isolate-scope > footer > header > ul > li > p > span {
+    width: 52px;
+    height: 53px;
+    background: red;
+    /* display: block; */
+    margin: 13px auto;
+}
+
+caminos-contacto.ng-isolate-scope > footer > header > ul:first-of-type {
+    display: inline-block;
+    padding: 14px 0;
+}
+
+caminos-contacto.ng-isolate-scope > footer > header > ul > li > p > i {
+    position: absolute;
+    top: 37%;
+    left: 15%;
+    font-style: normal;
+}
+
+caminos-contacto.ng-isolate-scope > footer > header > ul:last-of-type {
+    padding: 107px 0;
+}
