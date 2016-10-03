@@ -1,0 +1,192 @@
+<aside id="aside_plus" class="menu_inactivo" >
+		<ul id="cajaCerrar">
+			<li class="cajitaCerrar">
+				<div class="linkCerrar"></div>
+			</li>
+			<li class="cajitaCerrar">
+				<div class="linkCerrar"></div>
+			</li>
+			<li class="cajitaCerrar">
+				<div class="linkCerrar"></div>
+			</li>
+		</ul>
+		<div id="requests" style="display: block;">
+			<h3>Solicitar un Proyecto</h3>
+			<h4>Seamos socios</h4>
+			<p>¿Tenes un proyecto en el que pueda ayudar? Estoy encantado en proporcionar una consulta gratuita a tu conveniencia. </p>
+			<p>Sólo hay que rellenar el siguiente formulario, y estare en contacto tan pronto como sea posible.</p>
+			<div>
+
+				<form class="forms" name="formCotizar" ng-submit="enviarFormCotizacion()" novalidate>
+					<div class="container_text_inputs">
+						<!--<div role="alert" class="alert">
+						    <span class="error" ng-show="formCotizar.organizacion.$error.required">
+						      Required!</span>
+						    <span class="error" ng-show="formCotizar.organizacion.$error.pattern">
+						      Solo palabras!</span>
+						</div>-->
+						<div class="item l">
+							<input type="text" name="organizacion" ng-pattern="org.word" ng-model="org.text" placeholder="Organizacion" />
+						</div>
+						<div class="item r">
+							<input type="text" name="rubro" ng-pattern="rub.word" ng-model="rub.text" ngRequired placeholder="Rubro"/>
+						</div>
+						<div class="item l">
+							<input type="text" name="nombre" ng-pattern="nom.word" ng-model="nom.text" ng-trim="false" ngRequired placeholder="Tu nombre"/>
+						</div>
+						<div class="item r">
+							<input type="tel" name="telefono" ng-pattern="tel.tele" ng-model="tel.num"  ngRequired placeholder="Numero telefonico"/>
+						</div>
+						<div class="item ">
+							<input type="email" name="email"  ng-pattern="mail.path" ng-model="mail.correo" ng-trim="false" ngRequired placeholder="Tu e-mail"/>
+						</div>
+						<div class="item ">
+							<input type="text" name="url"  ng-pattern="ur.path" ng-model="ur.text" ng-trim="false" ngRequired placeholder="URL"/>
+						</div>
+						<div class="type1 interested">Cuales servicios te interesan?
+							<span class="sub">Multiselection</span>
+						</div>
+					</div>
+					<ul class="checks">
+						<li>
+							<label class="box-checkbox" >
+								<input type="checkbox" ng-model="checkboxModel.value1" >
+								<p>Website</p>
+							</label>
+							
+						</li>
+						<li>
+							<label class="box-checkbox" >
+								<input type="checkbox" ng-model="checkboxModel.value2" >
+								<p>Branding</p>
+							</label>
+						</li>
+						<li>
+							<label class="box-checkbox"  >
+								<input type="checkbox" ng-model="checkboxModel.value3">
+								<p>Marketing</p>
+							</label>
+						</li>
+						<li>
+							<label class="box-checkbox">
+								<input type="checkbox" ng-model="checkboxModel.value4">
+								<p>App Mobile</p>
+							</label>
+						</li>
+						<li>
+							<label class="box-checkbox">
+								<input type="checkbox" ng-model="checkboxModel.value5">
+								<p>UX/UI</p>
+							</label>
+						</li>
+						<li>
+							<label class="box-checkbox">
+								<input type="checkbox" ng-model="checkboxModel.value6">
+								<p>M-Commerce</p>
+							</label>
+						</li>
+						<li>
+							<label class="box-checkbox" >
+								<input type="checkbox" ng-model="checkboxModel.value7" >
+								<p>Responsive Design</p>
+							</label>
+						</li>
+
+						<li>
+							<label class="box-checkbox" >
+								<input type="checkbox" ng-model="checkboxModel.value8">
+								<p>Web Mobile</p>
+							</label>
+						</li>
+						<li>
+							<label class="box-checkbox">
+								<input type="checkbox" ng-model="checkboxModel.value9">
+								<p>Cortos Publicitarios</p>
+							</label>
+						</li>
+						<li>
+							<label class="box-checkbox" >
+								<input type="checkbox" ng-model="checkboxModel.valuea" >
+								<p>Promocion Web</p>
+							</label>
+						</li>
+						<li>
+							<label class="box-checkbox" >
+								<input type="checkbox" ng-model="checkboxModel.valueb" >
+								<p>Infografia</p>
+							</label>
+						</li>
+						<li>
+							<label class="box-checkbox" >
+								<input type="checkbox" ng-model="checkboxModel.valuec" >
+								<p>Actualizacion de sitios web</p>
+							</label>
+						</li>
+					</ul>
+					<div class="item message">
+						<div>
+							<textarea name="message"  cols="30" rows="2"  ng-pattern="des.path" ng-model="des.text" placeholder="Describe brevemente tu proyecto"></textarea>
+						</div>
+					</div>
+					<div class="item l budget">
+						<p class="type1">Presupuesto para tu proyecto?</p>
+						<div class="ipselect">
+							<select data-index="1" ng-model="selectM.option">
+								<option>$1,000.00 - $5,000.00</option>
+								<option>$5,000.00 - $15,000.00</option>
+								<option>$15,000.00 - $30,000.00</option>
+								<option>M&aacute;s de $50,000.00</option>
+							</select>
+						</div>
+					</div>
+					<div class="item r period">
+						<p class="type1">Tiempo estimado de duracion del proyecto?</p>
+						<div class="ipselect">
+							<select data-index="1"ng-model="selectP.option">
+								<option>Lo necesito ahora!</option>
+								<option>1-2 semanas</option>
+								<option>2-4 Meses</option>
+								<option>No hay prisa</option>
+							</select>
+
+						</div>
+					</div>
+					<div class="item upload">
+						<div class="iptext">
+						  <label id="fileuploadlabel-request" data-uploaded="">
+							<input type="file" id="fileuploadinput" >Subir
+							<span>(PDF, Zip max 30MB)</span>
+						  </label>
+						</div>
+					</div>
+					<div class="item agree">
+						<div class="ipcheck">
+							<span class="before">✓</span>
+							<input type="checkbox" value="0" data-setted="true" ng-model="checkboxPrivacidad.value">
+							<label for="requestprivacypolicy">Acepto los términos de la	<a href="#privacypolicy" class="btn-full-layer-privacypolicy" data-eventadded="true">política de privacidad</a>  y estoy de acuerdo
+							</label>
+						</div>
+					</div>
+					<p class="lastment">Gracias por considerarme para su próximo proyecto.
+						Rellene este pequeño formulario y me pondre en contacto, dentro de dos días hábiles.</p>
+					<div class="submit">
+						<button type="submit" id="submit" class="button dark" value="submit">Enviar</button>
+					</div>
+					<!--<div class="share">
+						<p>Compartir</p>
+						<div class="shareicon">
+							<a href="#" data-provider="Facebook" style="color: rgb(98, 98, 98);">
+								<span>Compartir on Facebook</span>
+							</a>
+							<a href="#" data-provider="Twitter" style="color: rgb(98, 98, 98);">
+								<span>Compartir on Twitter</span>
+							</a>
+							<a href="#" data-provider="Pinterest" style="color: rgb(98, 98, 98);">
+								<span>Compartir on Pinterest</span>
+							</a>
+						</div>
+					</div>-->
+				</div>
+			</form>
+		</div>
+	</aside>

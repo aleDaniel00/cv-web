@@ -21,11 +21,14 @@
 	    <div id='descripcion'>	
 			<div ng-controller="listarHerramientasController">
 				<div class="one" ng-repeat="y in herramientas">
-					<h4>{{y.nombre}}</h4>
 					<h5>{{y.intro}}</h5>
+					<img src="css/img/ico-boton/{{y.icono}}" alt="{{y.intro}}">
+
 					<p>{{y.descripcion}}</p>
 				</div>
 			</div>
 		</div>
+
 	</div>
+	
  </article> 

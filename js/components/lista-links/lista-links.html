@@ -1,28 +1,26 @@
 <header >
 		<div id="content-menu">
 			<nav>
-				<ul class="open">
-					<li >
-						<h1 class="h1" id="logo">
-							<a href="#" title="hola mundillo"></a>
+				<ul class="close" id="box_menu">
+					<li>
+						<h1 class="h1" ng-click="desplazar()">
+
 						</h1>
 					</li>
 					<li>
 						<img src="css/img/no-clickable/ajax-loader.gif" alt="Cargando..." ng-show="loading">
 					</li>
 					<li ng-repeat="x in links" > 
-					 	<a ng-href="#{{x.href}}" class="" ng-mouseenter="animarHover()" ng-mouseleave="animarLeave()"ng-class="{active: x.estado==1, inactive: x.estado==0}" ng-click="consultarRuta(x)" >
-					 		{{x.title}}
-					 		<div class ="ventana_modal "ng-Class="{active: eventoHover == true,inactive: eventoLeave == true}" > 
-					 			<div class='caja_relative_modal'>	
-						 			<p class='p_modal' >
-							 			{{x.title}}
-							 		</p>
-								</div>
-					 		</div>
+					 	<a ng-href="#{{x.href}}" title="{{x.title | uppercase}}" ng-class="{active: x.estado==1, inactive: x.estado==0}" ng-click="consultarRuta(x)" >
+					 		<em>{{x.title}}</em>
 					 	</a>
 					</li>
-					<li>
+					<li > 
+					 	<a ng-href="https://github.com/aleDaniel00/cv-web" title="Repo en GitHub" ng-class="{active: x.estado==1, inactive: x.estado==0}" >
+					 		<em>GitHub</em>
+					 	</a>
+					</li>
+					<!--<li>
 						<div id="red_social">
 							<ul>
 								<li class="red_social"><a href="#" class="texto_indentado" title="Sigueme @alexp_developer">twitter</a></a></li>
@@ -31,7 +29,7 @@
 								<li class="dates">Buenos Aires - Argentina</li>
 							</ul>
 						</div>
-					</li>
+					</li>-->
 				</ul>
 			</nav>
 		</div>

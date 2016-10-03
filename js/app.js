@@ -11,7 +11,7 @@ angular
 				.when('/buenas', {
 					// Le indicamos el template que queremos usar.
 					'templateUrl': 'views/buenas.html',
-					'controller': 'buttonsNavigator'
+					'controller': 'buenasController'
 				})
 				/*.when('/buenas/herramientas', {
 					// Le indicamos el template que queremos usar.
